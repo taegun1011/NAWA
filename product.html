@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAWA PRODUCT</title>
+    <link rel="stylesheet" href="app.css">
+    <style>
+        /* 메인 */
+        main {
+            min-width: 1300px
+        }
+
+        section:nth-of-type(1) {
+            padding: 100px 250px;
+            color: var(--mainColor);
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        section:nth-of-type(1) p:nth-of-type(1) {
+            font-size: 50px;
+            color: var(--mainColor);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        section:nth-of-type(1) p:nth-of-type(4) {
+            margin-top: 20px
+        }
+
+        main>p {
+            text-align: center;
+            color: var(--mainColor);
+            font-size: 15px
+        }
+
+        main>p span {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        section:nth-of-type(2) {
+            height: 500px;
+        }
+
+        section:nth-of-type(2) ul {
+            display: flex;
+            justify-content: center;
+            color: var(--mainColor);
+            font-size: 10px;
+            gap: 100px;
+            height: 100%;
+            padding: 200px 0;
+            box-sizing: border-box;
+        }
+
+        section:nth-of-type(2) ul li {
+            width: 200px
+        }
+
+        section:nth-of-type(3) {
+            height: 700px;
+        }
+
+        section:nth-of-type(3) ul {
+            display: flex;
+            justify-content: center;
+            color: var(--mainColor);
+            font-size: 10px;
+            gap: 200px;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 300px 0
+        }
+
+        section:nth-of-type(3) ul li {
+            width: 200px
+        }
+
+        main section:nth-of-type(4) {
+            text-align: center;
+            height: 600px;
+            font-size: 18px;
+            color: var(--mainColor);
+        }
+
+        main section:nth-of-type(4) h2 {
+            font-size: 50px;
+            color: var(--mainColor);
+            font-weight: bold;
+            box-sizing: border-box;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <h1>NAWA 제품소개</h1>
+        </a>
+        <nav>
+            <h2 class="screen_out">메인메뉴</h2>
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="achievement.html">ACHIVEMENTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="screen_out">컵끼리 제품소개</h2>
+            <p>컵끼리</p>
+            <p>국내 연간 종이컵 사용량 약 230억개</p>
+            <p>그러나, 종이컵 재활용률은 그중 <strong>약 1%</strong> 정도.</p>
+            <p>방수를 위한 내부 PE(폴리에틸렌) 코팅이 해리 과정을 방해하고 침전물을 발생시키며, 별도의 분리 선별 과정의 필요로 <strong>2차 비용 발생</strong>하게 된다.</p>
+            <p>이러한 이유로 종이컵은 <strong>컵끼리</strong> 버려야 재활용 된다는 사실을 모른 채 국민은 다른 폐지와 함께 버려 <strong>종이컵 대부분이 소각,매립</strong>되고
+                있다.</p>
+        </section>
+        <p>이러한 문제들을 해결하기 위한<br><span>저가형 종이컵 수거 자판기</span></p>
+        <section>
+            <h2 class="screen_out">컵끼리의 구동방식</h2>
+            <ul>
+                <li>
+                    <img src="#" alt="구동순서1">
+                    <p>컵을 버릴 때 뚜껑 위에 있는 살짝 파인 부분을 누르게 되면 힌지와 스프링으로 인해 뚜껑을 연 후 컵을 원형 막대 위에 올린다.</p>
+                </li>
+                <li>
+                    <img src="#" alt="구동순서2">
+                    <p>에어컴프레셔(소형 공기 압축기)가 컵을 세워둔 원기둥 안으로 공기를 빠르게 배출해 내부 이물질을 닦아낸다. 이때 사용자가 세척 버튼을 직접 눌러줘야 작동이 된다.</p>
+                </li>
+                <li>
+                    <img src="#" alt="구동순서3">
+                    <p>바람이 나오는 동안 컵 내부의 이물질이 떨어지는데 이때 밑에 떨어진 음식물 및 이물질은 밀대를 이용해 옆에 따로 설치된 쓰레기통으로 이물질을 밀어 넣는다. 그후 스태핑 모터가
+                        180도 회전하여 컵을 떨어뜨린다.</p>
+                </li>
+                <li>
+                    <img src="#" alt="구동순서4">
+                    <p>이물질을 받고 있었던 판은 전자석을 이용해서 벽면에 붙어 있다가 컵이 떨어질 때 전기를 끊어 판이 안으로 기울어진다. 컵이 떨어진 후 전자석에 전류를 흘려 이물질을 흘리던
+                        판이 올라온다. 판은 일정 기울기 이상 내려오지 않도록 지지대를 둔다. 컵은 떨어지고 종이컵 보관함으로 바로 들어간다.</p>
+                </li>
+                <li>
+                    <img src="#" alt="구동순서5">
+                    <p>컵 보관함에서 컵이 압축되면 그 부피가 1/10로 줄어들기 때문에 컵의 크기 상관없이 약 500개 이상 보관할 수 있게 된다.</p>
+                </li>
+            </ul>
+        </section>
+        <p>용이한 세척을 위한<br><span>세부 구조 구성</span></p>
+        <section>
+            <h2 class="screen_out">컵끼리 제품구조</h2>
+            <ul>
+                <li>
+                    <img src="#" alt="종이컵 보관함">
+                    <p>컵 이외에 밀대로 밀리지 않은 쓰레기는 거름망 아래로 들어가 쌓이게 된다. 거름망 밑에 보관함은 약 20L까지 보관가능하며 컵이 낙하하는 지점인 보관함의 끝 쪽에는 따로
+                        경사를 두어 컵이 프레스가 내려오는 위치까지 굴러가게 한다.</p>
+                </li>
+                <li>
+                    <img src="#" alt="쓰레기 투입구 구별">
+                    <p>오른쪽 통 윗부분의 왼쪽 원은 남은 음료를 버리는 구멍이며 오른쪽 따로 있는 부분은 컵의 뚜껑,홀더, 빨대 등을 버리는 곳이다. 음식물이 버려진 곳은 30L 까지 음식물
+                        쓰레기 보관이 가능하다.</p>
+                </li>
+                <li>
+                    <img src="#" alt="컵끼리 제품">
+                    <p>세척 시 손쉽게 분리할 수 있도록 설계하였습니다. 본체 뚜껑을 열면 본체 안에 있는 부품들을 꺼낼 수 있습니다.</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>컵끼리 로고<span class="screen_out">의 의미</span></h2>
+            <img src="#" alt="컵끼리 로고">
+            <p>컵끼리의 로고는 컵끼리와 비슷한 발음인<br>코끼리에서 착안하여 디자인되었습니다.</p>
+            <p>'CUP'과'끼리'의 타이포그래피를 코끼리 모양으로 제작하여<br>위와 같은 모양을 띄고 있습니다.</p>
+            <p>컵끼리와 함께 더 나은 세상으로 나아가는<br>진취적인 이미지의 코끼리를 형상화했습니다.</p>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <p>NAWA</p>
+            <p>CONTACT : 서영호 대표 010-5192-2477</p>
+            <p>E-mail : gsl05063@naver.com</p>
+        </address>
+    </footer>
+</body>
+
+</html>
