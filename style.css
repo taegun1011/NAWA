@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'ONE MOBILE', sans-serif;
+    src: url(../../글꼴/POP체/ONE\ Mobile\ POP.ttf) format('truetype');
+}
+
+* {
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    --maincolor: #6279F3;
+    --subcolor1: #B1BCF9;
+    --subcolor2: #CFD8FF;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+nav {
+    text-align: center;
+    font-weight: 700;
+    height: 90px;
+    padding: 30px 20px;
+    font-size: 20px;
+}
+
+nav li {
+    margin: 0 20px;
+    width: auto;
+    height: 30px;
+    text-align: center;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+nav a {
+    color: var(--maincolor);
+}
+
+footer {
+    padding: 20px 200px;
+    background-color: var(--maincolor);
+    color: white;
+    line-height: 2em;
+}
+
+footer .nawa {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+footer .info {
+    font-size: 18px;
+}
