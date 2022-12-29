@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    --maincolor: #6279F3;
+    --subcolor1: #B1BCF9;
+    --subcolor2: #CFD8FF;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*메뉴*/
+nav {
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 20px;
+    font-size: 20px;
+}
+
+nav li {
+    margin: 0 20px;
+    width: auto;
+    height: 30px;
+    text-align: center;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+nav a {
+    color: var(--maincolor);
+}
+
+/*Home*/
+
+/*Product*/
+#product article:nth-of-type(2n-1) {
+    background: linear-gradient(to right, var(--maincolor), var(--subcolor1));
+    color: white;
+}
+
+#product article:nth-of-type(2n) {
+    background-color: white;
+    color: var(--maincolor);
+}
+
+#product article:last-of-type {
+    background-color: var(--subcolor2);
+}
+
+#product article .title {
+    text-align: center;
+    font-size: 60px;
+}
+
+#product article .subtitle {
+    text-align: center;
+    font-size: 30px;
+}
+
+#product article:nth-of-type(1) {
+    padding: 120px 0 120px 200px;
+}
+
+#product article:nth-of-type(1)>div {
+    width: 40%;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#product_image {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+}
+
+#product article:nth-of-type(2) {
+    padding: 100px 0 100px 180px;
+}
+
+#product article:nth-of-type(2)>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#circle {
+    margin-left: 40px;
+    width: 230px;
+    height: 230px;
+    border-radius: 115px;
+    background: linear-gradient(120deg, var(--subcolor2), var(--maincolor));
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+#circle>div {
+    width: 170px;
+    height: 135px;
+    margin-top: 30px;
+    padding-top: 35px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+#circle div div {
+    width: 100px;
+    height: 91px;
+    padding-top: 9px;
+    border-radius: 100px;
+    background: linear-gradient(120deg, var(--maincolor), var(--subcolor2));
+}
+
+#product article:nth-of-type(3) {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+#product article:nth-of-type(4) {
+    text-align: center;
+    font-size: 35px;
+    padding: 100px 0;
+}
+
+#product article:nth-of-type(4) div span {
+    display: inline-block;
+}
+
+#product article:nth-of-type(4) div span:nth-of-type(2n-1) {
+    width: 180px;
+    height: 180px;
+    margin: 0 30px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px #b7b8bc;
+}
+
+#product article:nth-of-type(4) div span:nth-of-type(2n-1) div {
+    position: relative;
+    top: 35px;
+}
+
+#product article:nth-of-type(4) div span:nth-of-type(2n) {
+    font-size: 50px;
+}
+
+#product_box {
+    padding: 0 30px;
+    width: 200px;
+    height: 100px;
+    margin: 0 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #b7b8bc;
+    justify-content: center;
+}
+
+#product table {
+    margin-top: 30px;
+    table-layout: fixed;
+    width: 600px;
+    border-spacing: 0;
+}
+
+#product table tr:nth-of-type(1) td {
+    border: 5px solid var(--maincolor);
+    height: 100px;
+    border-top: none;
+}
+
+#product table tr:nth-of-type(2) td:first-of-type {
+    border-right: 5px solid var(--maincolor);
+}
+
+#product table+div {
+    box-shadow: 0 0 15px #b7b8bc;
+    border-radius: 50px;
+    width: 350px;
+    font-size: 45px;
+    padding: 10px 0;
+}
+
+.emptycell {
+    border-right: 5px solid var(--maincolor);
+}
+
+#product article:nth-of-type(5) {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#product article:nth-of-type(5) div {
+    margin-bottom: 50px;
+}
+
+#logo_image {
+    width: 700px;
+    height: 400px;
+}
+
+#product article:nth-of-type(5) p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR Medium';
+    font-weight: bold;
+}
+
+#product article:nth-of-type(6) {
+    padding: 50px 0;
+}
+
+#product article:nth-of-type(7) {
+    padding: 50px 0;
+}
+
+#product article:nth-of-type(8) {
+    padding: 50px 0;
+}
+
+
+#process_video,
+#process_image,
+#operating_location {
+    width: 925px;
+    height: 520px;
+    border-radius: 10px;
+    margin: 30px 12.5%;
+    box-shadow: 0 0 10px #b7b8bc;
+}
+
+/*바닥글*/
+footer {
+    padding: 20px 200px;
+    background-color: var(--maincolor);
+    color: white;
+    line-height: 2em;
+}
+
+footer .nawa {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+footer .info {
+    font-size: 18px;
+}
