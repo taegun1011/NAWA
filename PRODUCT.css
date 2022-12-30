@@ -17,30 +17,6 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/*메뉴*/
-nav {
-    text-align: center;
-    font-weight: 700;
-    padding: 30px 20px;
-    font-size: 20px;
-}
-
-nav li {
-    margin: 0 20px;
-    width: auto;
-    height: 30px;
-    text-align: center;
-    padding: 0 10px;
-    display: inline-block;
-}
-
-nav a {
-    color: var(--maincolor);
-}
-
-/*Home*/
-
-/*Product*/
 #product article:nth-of-type(2n-1) {
     background: linear-gradient(to right, var(--maincolor), var(--subcolor1));
     color: white;
@@ -235,22 +211,4 @@ nav a {
     border-radius: 10px;
     margin: 30px 12.5%;
     box-shadow: 0 0 10px #b7b8bc;
-}
-
-/*바닥글*/
-footer {
-    padding: 20px 200px;
-    background-color: var(--maincolor);
-    color: white;
-    line-height: 2em;
-}
-
-footer .nawa {
-    margin-left: 10px;
-    margin-bottom: 20px;
-    font-size: 23px;
-}
-
-footer .info {
-    font-size: 18px;
 }
