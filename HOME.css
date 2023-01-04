@@ -47,6 +47,10 @@ article h2 {
 }
 
 article:nth-of-type(1) {
+    background-image: url(img/HOME_bg.png);
+    background-size: 160%;
+    background-position: center;
+    background-position-y: 75%;
     padding-left: 250px;
     padding-top: 50px;
     height: 500px;

@@ -32,12 +32,14 @@ article:last-of-type {
     margin-bottom: 0;
 }
 
-#bg {
-    width: 1000px;
-    position: absolute;
-    left: 120px;
-    top: 150px;
-    z-index: 1;
+article:nth-of-type(1) {
+    height: 570px;
+    background-image: url(img/ABOUT_bg.png);
+    background-size: 70%;
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
 }
 
 #logo {
