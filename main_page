@@ -1,0 +1,165 @@
+.intro_nawa {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 10;
+    max-width: none;
+}
+
+.intro_nawa>div:not(.filter) {
+    background: no-repeat center /cover url(img/main_picture.png);
+    height: 100%;
+    position: relative;
+    max-width: none;
+}
+
+.intro_nawa>div>div {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.intro_nawa p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.intro_nawa p:nth-of-type(1) {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.change_page {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.change_page span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nawa_found {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nawa_found h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.nawa_found_item {
+    display: flex;
+    margin-top: 100px;
+    gap: 100px
+}
+
+.nawa_found_item p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.nawa_found_item p:not(:first-child) {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.nawa_found_item img {
+    width: 300px;
+}
+
+.nawa_product {
+    background: #e8e8e8;
+}
+
+.nawa_product>div {
+    position: relative;
+    height: 100vh;
+}
+
+.nawa_product img {
+    position: absolute;
+    width: 70%;
+    display: block;
+    left: -5%;
+}
+
+.nawa_product div>div {
+    position: absolute;
+    height: 50%;
+    width: 40%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nawa_product h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.nawa_product strong {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.video_slide h2 {
+    text-align: center;
+}
+
+/* 추후 추가 */
+.nawa_partner {
+    padding: 150px 0;
+}
+
+.nawa_partner p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nawa_partner p:nth-of-type(2) {
+    margin-top: 10px;
+    font-size: 18px
+}
+
+.nawa_partner ul {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+img[alt="NAWA사무실 위치"] {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
