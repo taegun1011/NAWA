@@ -1,0 +1,116 @@
+main {
+    font-size: 36px;
+}
+
+.product_1 {
+    background: linear-gradient(to bottom, #F7F7F7, white);
+}
+
+.product_1 div {
+    max-width: 720px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 300;
+}
+
+.product_1 img {
+    width: 720px;
+    margin-right: -100px;
+}
+
+.question {
+    text-align: center;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.question p {
+    margin: 100px 0;
+}
+
+.process {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+    text-align: center;
+    font-size: smaller;
+}
+
+.process div {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 50px;
+    padding-top: 70px;
+    font-size: 25px;
+}
+
+section[class="situation"] {
+    background-image: url(img/coffe_img.png);
+    background-size: cover;
+    height: 600px;
+    color: white;
+    padding-left: 100px;
+}
+
+.situation div:first-child {
+    position: relative;
+    top: 25%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.situation div:last-child {
+    position: relative;
+    top: 45%;
+    line-height: 100%;
+}
+
+.situation div:last-child::first-line {
+    font-size: 25px;
+}
+
+.product_2 div[class="img"] {
+    width: 100%;
+    height: 1000px;
+    background: no-repeat top /cover url(img/nawa_cup2.png);
+}
+
+.img div {
+    position: relative;
+    left: 50%;
+    top: 20%;
+}
+
+.img div p:nth-of-type(2) {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.NAWA_process {
+    text-align: center;
+}
+
+.NAWA_process div {
+    width: 250px;
+    height: 250px;
+    background-color: #E4E4E4;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 50px;
+    padding-top: 70px;
+    font-size: 25px;
+}
+
+.NAWA_process p {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.NAWA_process img {
+    margin: 50px 0 100px 0;
+    width: 640px;
+    height: 320px;
+}
