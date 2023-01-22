@@ -58,7 +58,16 @@ nav {
 
 header ul {
     display: flex;
+    align-items: center;
     gap: 100px;
+    height: 100%;
+}
+
+header ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 header ul a {
@@ -66,6 +75,23 @@ header ul a {
     color: #000;
     font-size: 20px;
     font-weight: 500;
+}
+
+header ul li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: ease all .3s;
+}
+
+header ul li:hover a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
 }
 
 footer {
