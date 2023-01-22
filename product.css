@@ -6,37 +6,62 @@ main {
     background: linear-gradient(to bottom, #F7F7F7, white);
 }
 
-.product_1 div {
-    max-width: 720px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    font-weight: 300;
+.product_1>div {
+    max-width: 1920px;
+    position: relative;
+    height: 100vh;
 }
 
 .product_1 img {
-    width: 720px;
-    margin-right: -100px;
+    width: 70%;
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product_1 p {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product_1 strong {
+    display: block;
+    text-align: center;
 }
 
 .question {
     text-align: center;
     font-weight: bold;
-    font-size: smaller;
+    font-size: 30px;
 }
 
-.question p {
+.question>p {
     margin: 100px 0;
+}
+
+.question>p:nth-of-type(2) {
+    color: #898989;
 }
 
 .process {
     background-color: #f7f7f7;
-    padding: 100px 0;
-    text-align: center;
-    font-size: smaller;
+    max-width: none;
+    height: 600px;
 }
 
-.process div {
+.process p {
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.process ol {
+    margin-top: 100px;
+}
+
+.process li {
     width: 250px;
     height: 250px;
     background-color: white;
@@ -47,53 +72,67 @@ main {
     font-size: 25px;
 }
 
-section[class="situation"] {
-    background-image: url(img/coffe_img.png);
-    background-size: cover;
-    height: 600px;
+.question div:last-child {
+    background: no-repeat center / cover url(img/coffe_img.png);
+    height: 1000px;
     color: white;
-    padding-left: 100px;
-}
-
-.situation div:first-child {
-    position: relative;
-    top: 25%;
     font-size: 22px;
     font-weight: bold;
-}
-
-.situation div:last-child {
-    position: relative;
-    top: 45%;
-    line-height: 100%;
-}
-
-.situation div:last-child::first-line {
-    font-size: 25px;
-}
-
-.product_2 div[class="img"] {
     width: 100%;
-    height: 1000px;
-    background: no-repeat top /cover url(img/nawa_cup2.png);
-}
-
-.img div {
     position: relative;
-    left: 50%;
-    top: 20%;
+    padding: 0 100px;
+    text-align: left;
 }
 
-.img div p:nth-of-type(2) {
-    font-size: larger;
+.question div:last-child p:first-child {
+    padding-top: 100px;
+    margin-bottom: 200px;
+}
+
+.question div:last-child p:last-child {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.situation strong {
+    font-size: 60px;
+}
+
+.product_2 {
+    background: linear-gradient(to bottom, #F7F7F7, white);
+    max-width: none;
+}
+
+.product_2>div {
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+}
+
+.product_2 img {
+    width: 100%;
+}
+
+.product_2>div div {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.product_2>div div p {
+    font-weight: 300;
+}
+
+.product_2>div div p:last-child {
     font-weight: bold;
+    font-size: 45px
 }
 
 .NAWA_process {
     text-align: center;
 }
 
-.NAWA_process div {
+.NAWA_process li {
     width: 250px;
     height: 250px;
     background-color: #E4E4E4;
