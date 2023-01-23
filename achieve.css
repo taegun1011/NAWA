@@ -1,0 +1,65 @@
+.top {
+    height: 350px;
+    padding: 130px;
+    text-align: center;
+    background: no-repeat center / cover url(img/city_img.png);
+    vertical-align: middle;
+}
+
+.top p {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.button {
+    margin: 35px 5px 0 5px;
+    display: inline-block;
+    background-color: white;
+    width: auto;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #000;
+}
+
+table {
+    text-align: center;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+thead tr {
+    border-bottom: 1px solid #CFCFCF;
+    height: 70px;
+}
+
+th:nth-of-type(2) {
+    font-size: 35px;
+}
+
+tbody td {
+    font-size: 18px;
+    width: 400px;
+    height: 50px;
+    border-bottom: 0.5px solid #E6E6E6;
+}
+
+tbody td:nth-of-type(2) {
+    font-size: 25px;
+    width: auto;
+    border-bottom: none;
+}
+
+tr[class="first"] {
+    border-top: 1.5px solid #CFCFCF;
+}
