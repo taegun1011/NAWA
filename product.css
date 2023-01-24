@@ -15,21 +15,23 @@ main {
 .product_1 img {
     width: 70%;
     position: absolute;
-    left: -10%;
+    left: -5%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .product_1 p {
     position: absolute;
-    right: 20%;
+    right: 15%;
     top: 50%;
     transform: translateY(-50%);
+    font-weight: 300;
 }
 
 .product_1 strong {
     display: block;
     text-align: center;
+    font-size: 50px;
 }
 
 .question {
@@ -49,7 +51,7 @@ main {
 .process {
     background-color: #f7f7f7;
     max-width: none;
-    height: 600px;
+    height: 540px;
 }
 
 .process p {
@@ -68,34 +70,57 @@ main {
     border-radius: 50%;
     display: inline-block;
     margin: 50px;
+    margin-top: -20px;
     padding-top: 70px;
     font-size: 25px;
+    font-weight: 400;
 }
 
-.question div:last-child {
-    background: no-repeat center / cover url(img/coffe_img.png);
-    height: 1000px;
+.filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 10;
+    max-width: none;
+}
+
+.question>div:last-child {
+    background: no-repeat url(img/coffee_img.png);
+    background-position: left bottom 5%;
+    background-size: 110%;
+    height: 580px;
     color: white;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 500;
     width: 100%;
     position: relative;
-    padding: 0 100px;
+    padding: 0 160px;
     text-align: left;
 }
 
+.question div:last-child div {
+    position: relative;
+    z-index: 20;
+}
+
 .question div:last-child p:first-child {
-    padding-top: 100px;
-    margin-bottom: 200px;
+    padding-top: 60px;
+    margin-bottom: 130px;
+}
+
+.question div:last-child p:nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .question div:last-child p:last-child {
-    font-size: 32px;
-    line-height: 1.5;
+    margin-top: -40px;
+    font-size: 36px;
 }
 
-.situation strong {
-    font-size: 60px;
+.question strong {
+    font-size: 72px;
 }
 
 .product_2 {
@@ -116,7 +141,7 @@ main {
 .product_2>div div {
     position: absolute;
     top: 20%;
-    right: 10%;
+    right: 23%;
 }
 
 .product_2>div div p {
@@ -144,8 +169,8 @@ main {
 }
 
 .NAWA_process p {
-    margin-top: 50px;
-    font-weight: bold;
+    margin-top: 75px;
+    font-weight: 500;
 }
 
 .NAWA_process img {
