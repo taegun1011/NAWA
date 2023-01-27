@@ -7,17 +7,17 @@ main {
 }
 
 .product_1>div {
-    max-width: 1920px;
     position: relative;
+    max-width: 1920px;
     height: 100vh;
 }
 
 .product_1 img {
-    width: 70%;
     position: absolute;
     left: -5%;
     top: 50%;
     transform: translateY(-50%);
+    width: 70%;
 }
 
 .product_1 p {
@@ -55,8 +55,8 @@ main {
 }
 
 .process p {
-    font-weight: bold;
     padding-top: 50px;
+    font-weight: bold;
 }
 
 .process ol {
@@ -64,13 +64,15 @@ main {
 }
 
 .process li {
-    width: 250px;
-    height: 250px;
-    background-color: white;
-    border-radius: 50%;
     display: inline-block;
     margin: 50px;
     margin-top: -20px;
+
+    background-color: white;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+
     padding-top: 70px;
     font-size: 25px;
     font-weight: 400;
@@ -86,17 +88,20 @@ main {
 }
 
 .question>div:last-child {
+    position: relative;
+
     background: no-repeat url(img/coffee_img.png);
     background-position: left bottom 5%;
     background-size: 110%;
+
+    width: 100%;
     height: 580px;
+    padding: 0 160px;
+
     color: white;
+    text-align: left;
     font-size: 22px;
     font-weight: 500;
-    width: 100%;
-    position: relative;
-    padding: 0 160px;
-    text-align: left;
 }
 
 .question div:last-child div {
@@ -129,9 +134,9 @@ main {
 }
 
 .product_2>div {
+    position: relative;
     max-width: 1920px;
     margin: auto;
-    position: relative;
 }
 
 .product_2 img {
@@ -158,13 +163,15 @@ main {
 }
 
 .NAWA_process li {
-    width: 250px;
-    height: 250px;
-    background-color: #E4E4E4;
-    border-radius: 50%;
     display: inline-block;
     margin: 50px;
+
+    background-color: #E4E4E4;
+    border-radius: 50%;
     padding-top: 70px;
+    width: 250px;
+    height: 250px;
+
     font-size: 25px;
 }
 
