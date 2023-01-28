@@ -80,6 +80,11 @@ td {
     font-weight: 300;
 }
 
+.content a {
+    text-decoration: none;
+    color: #000;
+}
+
 .first {
     border-top: 2px solid #CFCFCF;
 }
