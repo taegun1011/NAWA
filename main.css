@@ -29,6 +29,11 @@ header {
     width: 100%;
     height: 50px;
     z-index: 1000;
+    transition: ease all .3s;
+}
+
+header.on {
+    background-color: #585858;
 }
 
 header>div {
@@ -76,6 +81,11 @@ header ul a {
     color: #000;
     font-size: 16px;
     font-weight: 500;
+    transition: ease all .3s;
+}
+
+header.on ul a {
+    color: #fff;
 }
 
 header ul li a::after {
@@ -83,16 +93,12 @@ header ul li a::after {
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #000;
+    background-color: #fff;
     transition: ease all .3s;
 }
 
 header ul li:hover a::after {
-    content: "";
-    display: block;
     width: 100%;
-    height: 2px;
-    background-color: #000;
 }
 
 footer {
