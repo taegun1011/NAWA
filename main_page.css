@@ -112,24 +112,25 @@
     z-index: 20;
 }
 
-.color_option div {
+.color_option button {
     width: 15px;
     height: 15px;
     background-color: #FBCDBD;
     border-radius: 10px;
+    border: 0px;
 
     transition: 0.1s ease-out;
 }
 
-.color_option div:nth-child(2) {
+.color_option button:nth-child(2) {
     background-color: #C8C8C8;
 }
 
-.color_option div:nth-child(3) {
+.color_option button:nth-child(3) {
     background-color: #545150;
 }
 
-.color_option div:hover {
+.color_option button:hover {
     width: 50px;
 }
 
