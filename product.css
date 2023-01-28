@@ -22,9 +22,11 @@ main {
 
 .product_1 p {
     position: absolute;
-    right: 15%;
-    top: 50%;
+    right: 22%;
+    top: 53%;
     transform: translateY(-50%);
+
+    font-size: 30px;
     font-weight: 300;
 }
 
@@ -51,7 +53,7 @@ main {
 .process {
     background-color: #f7f7f7;
     max-width: none;
-    height: 540px;
+    height: 100vh;
 }
 
 .process p {
@@ -65,8 +67,7 @@ main {
 
 .process li {
     display: inline-block;
-    margin: 50px;
-    margin-top: -20px;
+    margin: -25px 30px 50px 30px;
 
     background-color: white;
     border-radius: 50%;
@@ -164,7 +165,7 @@ main {
 
 .NAWA_process li {
     display: inline-block;
-    margin: 50px;
+    margin: 50px 30px;
 
     background-color: #E4E4E4;
     border-radius: 50%;
@@ -177,11 +178,13 @@ main {
 
 .NAWA_process p {
     margin-top: 75px;
+
+    font-size: 32px;
     font-weight: 500;
 }
 
 .NAWA_process img {
     margin: 50px 0 100px 0;
-    width: 640px;
-    height: 320px;
+    width: 620px;
+    height: 360px;
 }
