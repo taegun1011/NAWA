@@ -29,13 +29,6 @@
     object-fit: contain;
 }
 
-.map {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 0;
-    font-weight: bold;
-}
-
 /* 
 img[alt="NAWA사무실 위치"] {
     width: 100%;
