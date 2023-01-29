@@ -1,3 +1,7 @@
+body {
+    background-color: #f2f2f2;
+}
+
 .top {
     height: 300px;
     padding: 100px;
@@ -27,14 +31,17 @@
     color: white;
 }
 
-.button {
+button {
     margin: 35px 10px 0 10px;
     display: inline-block;
     background-color: white;
     width: 150px;
     padding: 5px 20px;
     border-radius: 5px;
+    border: none;
+    outline: none;
     font-size: 20px;
+    cursor: pointer;
 }
 
 a {
@@ -42,13 +49,9 @@ a {
     color: #000;
 }
 
-.list {
-    background-color: #f2f2f2;
-}
 
-.list h2 {
+h2 {
     margin-top: 50px;
-
     text-align: center;
     font-size: 30px;
 }
@@ -78,84 +81,86 @@ td {
 .content {
     width: 800px;
     border-top: 0.5px solid #CFCFCF;
-
     text-align: left;
     font-size: 18px;
     font-weight: 300;
-}
-
-.content a {
-    text-decoration: none;
-    color: #000;
 }
 
 .first {
     border-top: 2px solid #CFCFCF;
 }
 
-.list>div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.list_2 {
+    padding: 0 50px;
+    display: none;
+}
 
-    width: 1000px;
+.list_2>div:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     text-align: center;
 }
 
 .card {
-    display: inline-block;
     background-color: white;
-    width: 280px;
-    height: 320px;
+    width: auto;
+    height: 570px;
     border-radius: 20px;
     margin: 50px 10px 20px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 .img {
     border-radius: 20px;
-    width: 220px;
-    height: 150px;
+    width: 100%;
+    height: 50%;
 }
 
 .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
     margin-top: 10px;
-
     font-weight: 500;
     font-size: 18px;
 }
 
 .info {
+    display: block;
     margin-top: 10px;
-
     color: #898989;
     font-weight: 500;
     font-size: 12px;
 }
 
-.index a {
-    margin: 50px 50px 100px;
-    font-size: 20px;
-}
-
-
-/*tbody td {
-    border-top: 0.5px solid #E6E6E6;
-    width: 400px;
-    text-align: left;
-    padding-left: 30px;
-    font-size: 18px;
-}
-
-tbody td:nth-of-type(2) {
-    border-bottom: none;
-    width: auto;
-    padding-left: 0;
+.index {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px 0;
     text-align: center;
-    font-size: 25px;
+    cursor: pointer;
 }
 
-tr[class="first"] {
-    border-top: 1.5px solid #CFCFCF;
-} */
+.ind_2 {
+    display: none;
+}
+
+.index span {
+    font-size: 20px;
+    color: #bebebe;
+}
+
+.index span.on {
+    color: #000;
+}
+
+.list_3 {
+    display: none;
+}
