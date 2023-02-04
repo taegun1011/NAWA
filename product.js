@@ -7,33 +7,27 @@ $(window).scroll(function () {
     if (t > $(".process").offset().top - h) {
         $(".process").addClass("on")
     }
-    if (t > 1500) {
-        $(".situ .rise1, .situ .rise2, .situ .rise3").addClass("rise")
+    if (t > $(".situ").offset().top - h) {
+        $(".situ").addClass("on")
     }
-
-    if (t > 2000) {
-        $(".product_2 .rise1, .product_2 .rise2").addClass("rise")
+    if (t > $(".product_2").offset().top - h) {
+        $(".product_2").addClass("on")
     }
-
-    if (t > 2900) {
-        $(".NAWA_process .rise1").addClass("rise")
-    }
-
-    if (t > 3100) {
-        $(".NAWA_process .rise2").addClass("rise")
+    if (t > $(".NAWA_process").offset().top - h) {
+        $(".NAWA_process").addClass("on")
     }
 })
 
 $(".color_option span").click(function (e) {
     $(".on").removeClass("on")
-    $(ttis).addClass("on")
+    $(this).addClass("on")
     if (e.target.dataset.color == "pink") {
-        $(".ctange_img").attr("src", "img/nawa_cup1.png")
+        $(".change_img").attr("src", "img/nawa_cup1.png")
     }
     if (e.target.dataset.color == "black") {
-        $(".ctange_img").attr("src", "img/nawa_cup1_black.png")
+        $(".change_img").attr("src", "img/nawa_cup1_black.png")
     }
     if (e.target.dataset.color == "gray") {
-        $(".ctange_img").attr("src", "img/nawa_cup1_gray.png")
+        $(".change_img").attr("src", "img/nawa_cup1_gray.png")
     }
 })
