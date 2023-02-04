@@ -74,35 +74,17 @@
 }
 
 /* nawa_fount rise 효과 */
-
-.rise1,
-.rise2,
-.rise3,
-.rise4 {
-    transform: translateY(100px);
+.nawa_found h2,
+.nawa_found p,
+.nawa_found img {
     opacity: 0;
-
-    transition: ease all 1s;
+    transform: translateY(50px);
+    transition: ease opacity .5s, ease transform .5s;
 }
 
-.rise2 {
-    transition-delay: 300ms;
-}
-
-.rise3 {
-    transition-delay: 600ms;
-}
-
-.rise4 {
-    transition-delay: 900ms;
-}
-
-.rise1.rise,
-.rise2.rise,
-.rise3.rise,
-.rise4.rise {
-    transform: translateY(0px);
+.nawa_found.on :where(h2, p, img) {
     opacity: 1;
+    transform: translateY(0);
 }
 
 .nawa_found_item {
@@ -114,6 +96,7 @@
 .nawa_found_item p {
     font-size: 18px;
     line-height: 2;
+    transition-delay: .5s;
 }
 
 .nawa_found_item p:not(:first-child) {
@@ -122,8 +105,17 @@
     font-weight: bold;
 }
 
+.nawa_found_item p:nth-of-type(2) {
+    transition-delay: 1s;
+}
+
+.nawa_found_item p:last-child {
+    transition-delay: 1.5s;
+}
+
 .nawa_found_item img {
     height: 230px;
+    transition-delay: .3s;
 }
 
 .nawa_product {
