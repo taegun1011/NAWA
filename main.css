@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    word-break: keep-all;
+    font-family: 'Noto Sans KR', 'san-serif';
+}
+
+.screen_out {
+    display: none;
+}
+
+section {
+    overflow: hidden;
+}
+
+section>div,
+main>div {
+    max-width: 1920px;
+    margin: auto;
+}
+
+header {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    transition: ease all .3s;
+}
+
+header.on {
+    background-color: #585858;
+}
+
+header>div {
+    position: relative;
+    height: 100%;
+}
+
+.main_logo {
+    display: block;
+    width: 40px;
+    height: 25px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: no-repeat center / cover url(img/logo.svg);
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header.on .main_logo {
+    background: no-repeat center / cover url(img/logo_rev.png);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+}
+
+
+header ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: ease all .3s;
+}
+
+header.on ul a {
+    color: #fff;
+}
+
+header ul li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: ease all .3s;
+}
+
+header ul li:hover a::after {
+    width: 100%;
+}
+
+footer {
+    background: #757575;
+    color: #DCDCDC;
+    height: 100%;
+}
+
+footer>div {
+    max-width: 1920px;
+    margin: auto;
+    padding: 30px 100px;
+}
+
+address {
+    font-style: normal;
+}
+
+address p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 250%;
+}
+
+address p~p {
+    font-size: 16px;
+}
+
+footer div>p {
+    margin-top: 20px;
+    text-align: center;
+}
