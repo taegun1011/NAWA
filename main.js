@@ -12,9 +12,10 @@ $(".color_option span").click(function (e) {
     }
 })
 
+var h = $(window).height() / 2
 $(window).scroll(function () {
-    var h = $(window).scrollTop();
-    if (h > 300) {
-        $(".rise1, .rise2, .rise3, .rise4").addClass("rise")
+    var t = $(window).scrollTop();
+    if (t >= $(".nawa_found").offset().top - h) {
+        $(".nawa_found").addClass("on")
     }
 })

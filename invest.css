@@ -14,44 +14,48 @@ section:first-child {
     max-width: none;
 }
 
-.form {
+.contact {
     display: flex;
     flex-direction: row;
-
     position: absolute;
     top: 25%;
     z-index: 20;
-
     width: 700px;
 }
 
-h1 {
+fieldset {
+    outline: none;
+    border: none;
+}
+
+h2 {
     width: 300px;
     margin: 0;
-
     font-size: 40px;
-    text-align: left;
     color: white;
 }
 
-form {
-    width: 400px;
-    height: 350px;
-    margin-bottom: 50px;
-}
-
-input {
+input,
+textarea {
     width: 400px;
     height: 50px;
-    border-radius: 30px;
     border: none;
+    box-sizing: border-box;
+    border-radius: 30px;
     padding-left: 25px;
     font-size: 18px;
     margin-bottom: 25px;
+    resize: none;
+    outline: none;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: var(--subcolor2);
+}
+
+textarea {
+    padding-top: 10px
 }
 
 button {
@@ -66,11 +70,12 @@ button {
     font-size: 18px;
     text-align: center;
     color: white;
+
+    transition: ease all .5s;
 }
 
 button:hover {
     background-color: black;
-    transition-duration: 0.5s;
 }
 
 .map {
