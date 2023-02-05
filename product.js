@@ -1,25 +1,20 @@
+var h = $(window).height() / 2
 $(window).scroll(function () {
-    var h = $(window).scrollTop();
-    if (h > 300) {
-        $(".question>.rise1, .question>.rise2, .question>.rise3").addClass("rise")
+    var t = $(window).scrollTop();
+    if (t > $(".question").offset().top - h) {
+        $(".question").addClass("on")
     }
-    if (h > 950) {
-        $(".process>.rise1, .process .rise2").addClass("rise")
+    if (t > $(".process").offset().top - h) {
+        $(".process").addClass("on")
     }
-    if (h > 1500) {
-        $(".situ .rise1, .situ .rise2, .situ .rise3").addClass("rise")
+    if (t > $(".situ").offset().top - h) {
+        $(".situ").addClass("on")
     }
-
-    if (h > 2000) {
-        $(".product_2 .rise1, .product_2 .rise2").addClass("rise")
+    if (t > $(".product_2").offset().top - h) {
+        $(".product_2").addClass("on")
     }
-
-    if (h > 2900) {
-        $(".NAWA_process .rise1").addClass("rise")
-    }
-
-    if (h > 3100) {
-        $(".NAWA_process .rise2").addClass("rise")
+    if (t > $(".NAWA_process").offset().top - h) {
+        $(".NAWA_process").addClass("on")
     }
 })
 
