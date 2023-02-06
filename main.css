@@ -52,7 +52,7 @@ header>div {
     height: 25px;
     text-indent: -9999px;
     overflow: hidden;
-    background: no-repeat center / cover url(img/logo.svg);
+    background: no-repeat center / contain url(img/logo.svg);
     position: absolute;
     left: 20px;
     top: 50%;
@@ -60,7 +60,7 @@ header>div {
 }
 
 header.on .main_logo {
-    background: no-repeat center / cover url(img/logo_rev.png);
+    background: no-repeat center / contain url(img/logo_rev.png);
 }
 
 nav {
@@ -180,6 +180,10 @@ footer div>p {
     body {
         font-size: 52%
     }
+
+    header ul {
+        gap: 50px;
+    }
 }
 
 @media (max-width:768px) {
@@ -187,6 +191,19 @@ footer div>p {
     html,
     body {
         font-size: 55%
+    }
+
+    .main_logo {
+        width: 30px;
+        height: 25px;
+    }
+
+    header ul {
+        gap: 25px;
+    }
+
+    header ul a {
+        font-size: 16px;
     }
 }
 
