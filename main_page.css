@@ -202,7 +202,7 @@
 }
 
 .we_nawa h2 {
-    margin: 20rem 0 10rem;
+    margin: 10rem 0 5rem;
     text-align: center;
     font-size: 3.5rem;
     font-weight: 500;
@@ -218,11 +218,6 @@
     width: 1000%;
 }
 
-.video_wrap li {
-    width: 720px;
-    height: 360px;
-}
-
 .video_wrap iframe {
     display: block;
     width: 100%;
@@ -230,24 +225,37 @@
 }
 
 #vid_btn {
-    position: absolute;
-    width: 100%;
     height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
     pointer-events: none;
 }
 
 #vid_btn button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15rem;
+    color: #eee;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     position: absolute;
-    left: 10%;
+    left: -7%;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
     pointer-events: visible;
+    transition: ease all .5s;
+}
+
+#vid_btn button:hover {
+    color: #fff;
 }
 
 #vid_btn button:nth-child(2) {
     left: auto;
-    right: 10%;
+    right: -7%;
 }
 
 .nawa_partner {
@@ -267,11 +275,14 @@
 }
 
 .nawa_partner ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 10rem;
-    margin: 2.5rem 0 4rem;
+    justify-items: center;
+    gap: 5rem;
+    max-width: 70rem;
+    margin: auto;
 }
 
 .logo {
@@ -289,6 +300,7 @@
     .nawa_product>div:last-child {
         left: 65%;
     }
+
 }
 
 @media(max-width:989px) {
@@ -303,5 +315,112 @@
     html,
     body {
         font-size: 55%
+    }
+
+    .we_nawa {
+        height: 60vh;
+    }
+
+    .intro_nawa p {
+        font-size: 1.6rem;
+    }
+
+    .intro_nawa p:nth-of-type(1) {
+        font-size: 2.5rem;
+    }
+
+    .change_page {
+        width: 12rem;
+        height: 4rem;
+    }
+
+    .change_page span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:500px) {
+    .intro_nawa>div>div {
+        width: 100%;
+        left: 1rem;
+        transform: translate(0, -50%);
+    }
+
+    .nawa_found>div {
+        position: relative;
+    }
+
+    .nawa_found>div::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: no-repeat center / contain url(img/logo_name.png);
+        position: absolute;
+        opacity: .1;
+    }
+
+    .nawa_found h2 {
+        font-size: 2.5rem;
+    }
+
+    .nawa_found_item p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+
+    .nawa_found_item p:not(:first-child) {
+        font-size: 1.8rem;
+    }
+
+    .nawa_found_item img {
+        display: none;
+    }
+
+    .color_option {
+        top: 30%
+    }
+
+    .nawa_product img {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nawa_product>div:last-child {
+        left: 40%;
+        top: 75%;
+    }
+
+    .nawa_product h2 {
+        font-size: 1.8rem;
+    }
+
+    .nawa_product strong {
+        font-size: 3rem;
+    }
+
+    .nawa_product .change_page {
+        display: none;
+    }
+
+    .we_nawa h2 {
+        font-size: 2.5rem;
+    }
+
+    #vid_btn button {
+        font-size: 7rem;
+    }
+
+    .nawa_partner p {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .nawa_partner ul {
+        gap: 0;
+    }
+
+    .logo {
+        width: 10rem;
     }
 }
