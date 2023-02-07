@@ -20,31 +20,31 @@ section:first-child {
     position: absolute;
     top: 25%;
     z-index: 20;
-    width: 700px;
 }
 
 fieldset {
+    display: flex;
+    flex-direction: column;
     outline: none;
     border: none;
 }
 
 h2 {
-    width: 300px;
-    margin: 0;
-    font-size: 40px;
+    font-size: 4rem;
     color: white;
+    margin-right: 20rem
 }
 
 input,
 textarea {
-    width: 400px;
-    height: 50px;
+    width: 40rem;
+    height: 5rem;
     border: none;
     box-sizing: border-box;
-    border-radius: 30px;
-    padding-left: 25px;
-    font-size: 18px;
-    margin-bottom: 25px;
+    border-radius: 3rem;
+    padding-left: 2.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
     resize: none;
     outline: none;
 }
@@ -55,19 +55,19 @@ textarea::placeholder {
 }
 
 textarea {
-    padding-top: 10px
+    padding-top: 1rem
 }
 
 button.form_base {
-    border-radius: 30px;
+    border-radius: 3rem;
     border: none;
     background-color: #585858;
 
-    width: 400px;
-    height: 50px;
-    margin-top: 50px;
+    width: 40rem;
+    height: 5rem;
+    margin-top: 5rem;
 
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: center;
     color: white;
 
@@ -83,4 +83,40 @@ button.form_base:hover {
     text-align: center;
     font-size: 0;
     font-weight: bold;
+}
+
+@media (max-width:768px) {
+    .contact {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact>div:first-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact h2 {
+        text-align: center;
+    }
+
+    .contact fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:500px) {
+
+    input,
+    textarea {
+        width: 35rem;
+        margin-bottom: 1.8rem;
+    }
+
+    button.form_base {
+        width: 35rem;
+        margin-top: 3rem;
+    }
 }
