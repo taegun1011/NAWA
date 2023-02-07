@@ -8,19 +8,11 @@ section {
     background: #f5f5f5;
 }
 
-.product_1 img {
-    display: block;
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    transform: translate(-10%, -60%);
-    height: 80%;
-}
-
 .color_option {
-    position: relative;
+    position: absolute;
     top: 10rem;
-    left: 40rem;
+    right: 20%;
+    transform: translateX(20%);
     align-self: center;
 
     display: flex;
@@ -60,19 +52,38 @@ section {
 }
 
 .product_1 div:nth-of-type(2) {
+    position: relative;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+
+    margin: 0;
+    width: 80%;
+    height: 90%;
+    overflow: visible;
+}
+
+.product_1 img {
     position: absolute;
-    top: 55%;
-    left: 65%;
-    transform: translate(-65%, -55%);
+    top: 60%;
+    right: 35%;
+    transform: translate(0%, -60%);
+    height: 100%;
+    max-height: 670px;
 }
 
 .product_1 h2 {
-    margin-bottom: 15px;
-    font-size: 4rem;
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-80%, -55%);
+
+    font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.5;
 
     text-align: center;
+    white-space: nowrap;
 }
 
 .product_1 strong {
@@ -121,14 +132,25 @@ section {
 
 .process {
     background-color: #f7f7f7;
+}
+
+.process div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    height: 60%;
+    margin: 0;
 }
 
 .process p {
-    margin-top: 100px;
     font-size: 4.3rem;
     font-weight: bold;
 }
@@ -146,10 +168,6 @@ section {
     transform: translateY(0);
 }
 
-.process ol {
-    margin-top: 75px;
-}
-
 .process li {
     display: inline-block;
     margin: 50px 30px;
@@ -158,11 +176,12 @@ section {
     width: 250px;
     height: 250px;
     padding-top: 70px;
+
     font-size: 25px;
     font-weight: 400;
-    transition-delay: .5s;
-
     text-align: center;
+
+    transition-delay: .5s;
 }
 
 .process li:nth-of-type(2) {
@@ -174,20 +193,16 @@ section {
 }
 
 .situ {
-    position: relative;
-
     background: no-repeat url(img/coffee_img.png);
     background-position: left bottom 5%;
     background-size: 110%;
-
-    width: 100%;
 
     color: white;
     font-size: 2.5rem;
     font-weight: 500;
 }
 
-.filter {
+.situ .filter {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -195,8 +210,8 @@ section {
     z-index: 10;
 }
 
-.filter div {
-    position: relative;
+.situ .filter div {
+    position: absolute;
     left: 30%;
     top: 30%;
     transform: translate(-30%, -30%);
@@ -218,17 +233,20 @@ section {
 .situ p:nth-child(2) {
     font-weight: 400;
     font-size: 2.5rem;
+
     transition-delay: .5s;
 }
 
 .situ p:last-child {
     margin-top: -40px;
     font-size: 4rem;
+
     transition-delay: .5s;
 }
 
 .situ strong {
     font-size: 8rem;
+
     opacity: 0;
     transition: ease opacity .5s;
     transition-delay: 1s;
@@ -256,9 +274,9 @@ section {
 
 .product_2>div div {
     position: absolute;
-    left: 65%;
-    top: 25%;
-    transform: translate(-65%, -25%);
+    left: 48%;
+    top: 22%;
+    /* transform: translate(-65%, -25%); */
 }
 
 .product_2>div div p {
@@ -322,83 +340,204 @@ section {
 }
 
 @media (max-width: 500px) {
-    .product_1>div {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    section {
+        height: 25vh;
     }
 
-    .product_1 img {
-        display: block;
-        position: absolute;
-        top: 60%;
-        left: 10%;
-        transform: translate(-10%, -60%);
-        height: 80%;
+    .product_1 {
+        height: 420px;
     }
 
     .color_option {
         position: relative;
-        top: -40%;
-        left: 40rem;
-        transform: translateY(40%);
-        align-self: center;
+        top: 10%;
+        right: 5%;
+        transform: none;
+        float: right;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        width: 10rem;
-        height: 6rem;
-        z-index: 20;
+        width: 100px;
+        height: 75px;
     }
 
     .color_option span {
-        display: block;
-        width: 1.5rem;
-        height: 1.5rem;
-        background-color: #FBCDBD;
-        border-radius: 1rem;
-        border: 0px;
-        transition: 0.1s ease-out;
-        cursor: pointer;
-    }
-
-    .color_option span:nth-child(2) {
-        background-color: #C8C8C8;
-    }
-
-    .color_option span:nth-child(3) {
-        background-color: #545150;
+        width: 15px;
+        height: 15px;
+        border-radius: 7.5px;
     }
 
     .color_option span:hover {
-        width: 5rem;
+        width: 50px;
     }
 
     .color_option .on {
-        width: 5rem;
+        width: 50px;
     }
 
-    .product_1>div div:nth-of-type(2) {
+    .product_1 div:nth-of-type(2) {
+        width: 300px;
+    }
+
+    .product_1 img {
         position: absolute;
-        top: 55%;
-        left: 65%;
-        transform: translate(-65%, -55%);
+        left: -150px;
+        top: 0;
+        transform: none;
+
+        height: 90%;
     }
 
     .product_1 h2 {
-        margin-bottom: 15px;
-        font-size: 4rem;
-        font-weight: 300;
+        top: 60px;
+        left: 110px;
+        transform: none;
+
+        font-size: 12px;
         line-height: 1.5;
 
-        text-align: center;
+        text-align: left;
+        white-space: nowrap;
     }
 
     .product_1 strong {
-        font-size: 6rem;
-        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+
+    .question p {
+        margin: 10px 0;
+    }
+
+    .question p:nth-of-type(1) {
+        margin-top: 10px;
+    }
+
+    .question p:nth-of-type(2) {
+        font-size: 18px;
+    }
+
+    .process div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 80%;
+        height: 80%;
+        margin: 0;
+    }
+
+    .process p {
+        font-size: 14px;
+    }
+
+    .process ol {
+        display: flex;
+    }
+
+    .process li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100px;
+        height: 100px;
+        padding-top: 0;
+        margin: 0 15px;
+
+        font-size: 12px;
+    }
+
+    .situ {
+        font-size: 8px;
+    }
+
+    .situ .filter {
+        position: relative;
+    }
+
+    .situ .filter div {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        transform: none;
+    }
+
+    .situ p:first-child {
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .situ p:nth-child(2) {
+        font-size: 10px;
+    }
+
+    .situ p:last-child {
+        margin-top: -20px;
+        font-size: 12px;
+    }
+
+    .situ strong {
+        font-size: 32px;
+    }
+
+    .product_2 img {
+        width: 100%;
+    }
+
+    .product_2>div div {
+        position: absolute;
+        left: 48%;
+        top: 22%;
+    }
+
+    .product_2>div div p {
+        font-size: 15px;
+    }
+
+    .product_2>div div p:last-child {
+        font-size: 20px;
+    }
+
+    .process_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .process_2 ol {
+        display: flex;
+    }
+
+    .process_2 li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100px;
+        height: 100px;
+        padding-top: 0;
+        margin: 0 15px;
+
+        font-size: 12px;
+    }
+
+    .process_2 p {
+        margin-top: 25px;
+        font-size: 24px;
+    }
+
+    .process_2 video {
+        margin: 25px 0;
+        width: 280px;
+        height: 160px;
     }
 }
