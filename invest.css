@@ -58,7 +58,7 @@ textarea {
     padding-top: 10px
 }
 
-button {
+button.form_base {
     border-radius: 30px;
     border: none;
     background-color: #585858;
@@ -72,9 +72,10 @@ button {
     color: white;
 
     transition: ease all .5s;
+    cursor: pointer;
 }
 
-button:hover {
+button.form_base:hover {
     background-color: black;
 }
 
