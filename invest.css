@@ -119,4 +119,8 @@ button.form_base:hover {
         width: 35rem;
         margin-top: 3rem;
     }
+
+    iframe {
+        height: 30vh;
+    }
 }
