@@ -219,6 +219,13 @@ section {
     width: 800px;
 }
 
+.situ p {
+    transform: translateY(50px);
+    opacity: 0;
+
+    transition: ease-in all 0.5s;
+}
+
 
 .situ.on p {
     transform: translateY(0);
@@ -249,7 +256,7 @@ section {
 
     opacity: 0;
     transition: ease opacity .5s;
-    transition-delay: 1s;
+    transition-delay: 1.5s;
 }
 
 .situ.on strong {
