@@ -74,7 +74,7 @@ nav {
 header ul {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 10rem;
     height: 100%;
 }
 
@@ -294,5 +294,9 @@ footer div>p {
     html,
     body {
         font-size: 60%
+    }
+
+    header {
+        display: none;
     }
 }

@@ -13,8 +13,8 @@ $(window).scroll(function () {
     if (t > $(".product_2").offset().top - h) {
         $(".product_2").addClass("on")
     }
-    if (t > $(".NAWA_process").offset().top - h) {
-        $(".NAWA_process").addClass("on")
+    if (t > $(".process_2").offset().top - h) {
+        $(".process_2").addClass("on")
     }
 })
 
