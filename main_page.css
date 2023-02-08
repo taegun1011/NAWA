@@ -312,11 +312,6 @@
 
 @media (max-width:768px) {
 
-    html,
-    body {
-        font-size: 55%
-    }
-
     .we_nawa {
         height: 60vh;
     }
