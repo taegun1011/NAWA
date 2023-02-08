@@ -103,9 +103,11 @@ td {
 }
 
 .list_2>div:nth-of-type(1) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+
     text-align: center;
 }
 
@@ -114,12 +116,23 @@ td {
     width: 33rem;
     height: 38rem;
     border-radius: 2rem;
-    margin: 2rem;
     margin-top: 5rem;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.card:nth-of-type(3n-2) {
+    justify-self: end;
+}
+
+.card:nth-of-type(3n-1) {
+    justify-self: center;
+}
+
+.card:nth-of-type(3n) {
+    justify-self: start;
 }
 
 
@@ -141,6 +154,10 @@ td {
 
 .title a {
     font-size: 2.2rem;
+}
+
+.title a:hover() {
+    cursor: pointer;
 }
 
 .info {
@@ -237,6 +254,16 @@ td {
 
     .list_2 {
         padding: 0;
+    }
+
+    .list_2>div:nth-of-type(1) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+        gap: 0;
+        width: auto;
     }
 
     .card {
