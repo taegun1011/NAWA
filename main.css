@@ -233,7 +233,7 @@ footer div>p {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #585858;
+        background: rgb(25, 25, 25);
         top: 50%;
         transform: translateY(-50%);
         display: none;

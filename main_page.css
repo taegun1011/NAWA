@@ -316,21 +316,31 @@
         height: 60vh;
     }
 
+    .intro_nawa>div:not(.filter) {
+        background: no-repeat 60% 0 /cover url(img/main_picture.png);
+    }
+
+    .intro_nawa>div>div {
+        left: 3.6rem;
+        top: 30%;
+        transform: none;
+    }
+
     .intro_nawa p {
         font-size: 1.6rem;
     }
 
     .intro_nawa p:nth-of-type(1) {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .change_page {
-        width: 12rem;
-        height: 4rem;
+        width: 10rem;
+        height: 3rem;
     }
 
     .change_page span {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 

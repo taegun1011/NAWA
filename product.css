@@ -2,6 +2,7 @@ section {
     max-width: 1920px;
     height: 100vh;
     font-size: 4rem;
+    margin: auto;
 }
 
 .nawa_product {
@@ -138,7 +139,8 @@ section {
     margin-bottom: 5rem;
 }
 
-.process ol {
+.process ol,
+.process_2 ol {
     display: flex;
     gap: 5rem
 }
@@ -156,7 +158,8 @@ section {
     transform: translateY(0);
 }
 
-.process li {
+.process li,
+.process_2 li {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -179,17 +182,14 @@ section {
 }
 
 .situ {
-    background: no-repeat url(img/coffee_img.png);
-    background-position: left bottom 5%;
-    background-size: 110%;
-
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 500;
+    position: relative;
+    background: no-repeat center / cover url(img/coffee_img.png);
 }
 
 .situ .filter {
     position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .6);
@@ -201,14 +201,12 @@ section {
     left: 30%;
     top: 30%;
     transform: translate(-30%, -30%);
-
-    width: 800px;
+    color: white;
 }
 
 .situ p {
     transform: translateY(50px);
     opacity: 0;
-
     transition: ease-in all 0.5s;
 }
 
@@ -308,14 +306,7 @@ section {
 }
 
 .process_2 li {
-    display: inline-block;
-    margin: 50px 30px;
     background-color: #E4E4E4;
-    border-radius: 50%;
-    padding-top: 70px;
-    width: 250px;
-    height: 250px;
-    font-size: 25px;
 }
 
 .process_2 li:nth-of-type(2) {
@@ -334,8 +325,8 @@ section {
 }
 
 .process_2 video {
-    margin: 25px 0 50px 0;
-    width: 80rem;
+    margin: 25px 0;
+    width: 90vw;
     height: auto;
 }
 
@@ -387,10 +378,6 @@ section {
 }
 
 @media (max-width: 500px) {
-    section {
-        height: 25vh;
-    }
-
 
     .color_option {
         top: 30%
@@ -442,7 +429,8 @@ section {
         display: flex;
     }
 
-    .process li {
+    .process li,
+    .process_2 li {
         display: flex;
         justify-content: center;
         align-items: center;

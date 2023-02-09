@@ -37,7 +37,7 @@ body {
     width: 100vw;
 }
 
-button {
+.top button {
     margin: 35px 10px 0 10px;
     display: inline-block;
     background-color: white;
@@ -102,50 +102,36 @@ td {
     display: none;
 }
 
-.list_2>div:nth-of-type(1) {
+.list_2 ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: 80%;
-
-    text-align: center;
+    gap: 25px;
+    justify-items: center;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     width: 33rem;
     height: 38rem;
     border-radius: 2rem;
-    margin-top: 5rem;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card:nth-of-type(3n-2) {
-    justify-self: end;
-}
-
-.card:nth-of-type(3n-1) {
-    justify-self: center;
-}
-
-.card:nth-of-type(3n) {
-    justify-self: start;
+    padding: 2rem;
 }
 
 .card>a {
-    display: inline-block;
     width: 100%;
     height: 60%;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 
-.img {
-    border-radius: 20px;
+.card img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .title {
@@ -153,10 +139,8 @@ td {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 40%;
-    margin-top: 10px;
-
     font-weight: 500;
+    text-align: center;
     white-space: nowrap;
 }
 
@@ -201,6 +185,30 @@ td {
     display: none;
 }
 
+@media (max-width:1280px) {
+    .card {
+        width: 30rem;
+        height: 35rem;
+    }
+}
+
+@media (max-width:989px) {
+    .list_2 {
+        padding: 0 15px;
+    }
+
+    .list_2 ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+
+    .title a {
+        font-size: 1.8rem
+    }
+}
+
 @media (max-width: 500px) {
     .top {
         display: flex;
@@ -218,7 +226,7 @@ td {
         font-size: 24px;
     }
 
-    button {
+    .top button {
         margin: 3px;
         margin-top: 15px;
         width: 100px;
