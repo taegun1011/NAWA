@@ -367,11 +367,16 @@ section {
     }
 
     .nawa_product>div:last-child {
-        top: 28%;
+        left: 50%;
+        top: 26%;
     }
 
     .nawa_product h2 {
         font-size: 2rem
+    }
+
+    .question {
+        background-color: #f5f5f5;
     }
 
     .question p {
@@ -399,7 +404,7 @@ section {
 
 @media (max-width: 500px) {
     .nawa_product h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .nawa_product strong {
@@ -411,11 +416,19 @@ section {
     }
 
     .question {
-        font-size: 18px;
+        display: block;
+    }
+
+    .question>div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .question p {
         margin: 10px 0;
+        font-size: 1.8rem;
     }
 
     .question p:nth-of-type(1) {
@@ -426,30 +439,13 @@ section {
         font-size: 18px;
     }
 
-    .process p {
-        font-size: 14px;
-    }
-
-    .process ol {
-        display: flex;
-    }
-
-    .process li,
-    .process_2 li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: 100px;
-        height: 100px;
-        padding-top: 0;
-        margin: 0 15px;
-
-        font-size: 12px;
+    .process {
+        display: none;
     }
 
     .situ {
         font-size: 8px;
+        height: 100vh;
     }
 
     .situ .filter {
@@ -457,28 +453,86 @@ section {
     }
 
     .situ .filter div {
-        position: absolute;
-        left: 10%;
-        top: 10%;
+        position: static;
         transform: none;
     }
 
-    .situ p:first-child {
-        padding-top: 20px;
-        margin-bottom: 30px;
+    .situ .change-situ p:first-child {
+        padding-top: 100px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: bold;
     }
 
-    .situ p:nth-child(2) {
-        font-size: 10px;
+    .change-situ ol {
+        position: relative;
+        max-width: 100vw;
+        margin: auto;
     }
 
-    .situ p:last-child {
-        margin-top: -20px;
-        font-size: 12px;
+    .change-situ li {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, .3);
+        border-radius: 50%;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+    }
+
+    .change-situ li span {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+
+    .change-situ li:first-child {
+        margin: 0 31% 20px;
+    }
+
+    .change-situ li:nth-of-type(2) {
+        margin: 0 12% 0 5%;
+    }
+
+    .filter div:last-child {
+        display: none;
+    }
+
+    .situ .change-situ p:last-child {
+        margin-top: 5rem;
+    }
+
+    .situ .change-situ p:last-child span {
+        display: block;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .situ .change-situ p:last-child span:first-child {
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    .situ .change-situ p:last-child span:nth-child(2) {
+        font-size: 1.6rem;
+        color: rgba(255, 255, 255, .3);
+    }
+
+    .situ .change-situ p:last-child span:nth-child(3) {
+        font-size: 2rem;
+    }
+
+    .situ .change-situ p:last-child span:last-child {
+        width: 50%;
+        margin: auto;
+        background: no-repeat center / contain url(img/back-deco.png);
     }
 
     .situ strong {
-        font-size: 32px;
+        font-size: 6rem;
     }
 
     .product_2 img {
@@ -507,30 +561,19 @@ section {
     }
 
     .process_2 ol {
-        display: flex;
-    }
-
-    .process_2 li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: 100px;
-        height: 100px;
-        padding-top: 0;
-        margin: 0 15px;
-
-        font-size: 12px;
+        display: none;
     }
 
     .process_2 p {
-        margin-top: 25px;
-        font-size: 24px;
+        margin: 2.5rem 0;
+        font-size: 3rem;
+        font-weight: bold;
     }
 
     .process_2 video {
-        margin: 25px 0;
-        width: 280px;
-        height: 160px;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

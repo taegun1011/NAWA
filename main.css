@@ -236,6 +236,10 @@ footer div>p {
         font-size: 55%
     }
 
+    header {
+        background: none;
+    }
+
     .main_logo {
         width: 3rem;
         height: 2.5rem;
