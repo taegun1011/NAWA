@@ -16,6 +16,12 @@ $(window).scroll(function () {
     if (t > $(".process_2").offset().top - h) {
         $(".process_2").addClass("on")
     }
+    if (t > $(".process").offset().top && t < $(".product_2").offset().top) {
+        $("header").addClass("no-bg")
+    }
+    else {
+        $("header").removeClass("no-bg")
+    }
 })
 if ($(window).width() > 768) {
     $(".color_option span").click(function (e) {
