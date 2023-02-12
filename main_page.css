@@ -297,9 +297,10 @@
         left: -20%;
     }
 
+    /* 
     .nawa_product>div:last-child {
         left: 65%;
-    }
+    } */
 
 }
 
@@ -345,59 +346,111 @@
 }
 
 @media (max-width:500px) {
+    .intro_nawa>div:not(.filter) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .intro_nawa>div>div {
-        width: 100%;
-        left: 1rem;
-        transform: translate(0, -50%);
+        position: static;
+        width: auto;
+        transform: none;
     }
 
-    .nawa_found>div {
-        position: relative;
-    }
+    .nawa_found {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    .nawa_found>div::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: no-repeat center / contain url(img/logo_name.png);
-        position: absolute;
-        opacity: .1;
+        background-color: #000;
+        color: #fff;
     }
 
     .nawa_found h2 {
-        font-size: 2.5rem;
+        display: none;
+    }
+
+    .nawa_found>div {
+        display: flex;
+
+        position: relative;
+        margin: 0;
+    }
+
+    .nawa_found::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background: url(img/logo_rev.png);
+        background-size: 30%;
+        background-repeat: space;
+        opacity: 0.1;
+    }
+
+    .nawa_found_item {
+        margin-top: 0;
     }
 
     .nawa_found_item p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        font-weight: 300;
         line-height: 1.5;
     }
 
-    .nawa_found_item p:not(:first-child) {
-        font-size: 1.8rem;
+    .nawa_found_item p:nth-child(2) {
+        font-size: 1.6rem;
+    }
+
+    .nawa_found_item p:nth-child(3) {
+        font-size: 4.5rem;
     }
 
     .nawa_found_item img {
         display: none;
     }
 
+    .nawa_product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 50vh;
+    }
+
     .color_option {
         top: 30%
     }
 
-    .nawa_product img {
-        top: 50%;
-        transform: translateY(-50%);
+    .nawa_product>div:last-child {
+        flex-direction: column;
+        display: block;
+        position: static;
+        width: 100%;
+        height: 100%;
+        transform: none;
+
+        background-image: url(img/nawa_cup1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
-    .nawa_product>div:last-child {
-        left: 40%;
-        top: 75%;
+    .nawa_product img {
+        display: none;
     }
 
     .nawa_product h2 {
+        display: inline;
+        position: relative;
+        top: 15%;
+        left: 50%;
         font-size: 1.8rem;
+
+        transform: translate(-50%, -50%);
     }
 
     .nawa_product strong {
@@ -408,12 +461,37 @@
         display: none;
     }
 
+    .we_nawa {
+        height: auto;
+    }
+
     .we_nawa h2 {
+        margin: 30px 0;
         font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .video_slide {
+        height: auto;
+        margin-bottom: 100px;
+        border: 1px solid #000;
+    }
+
+    .video_slide video {
+        width: 390px;
+        height: 195px;
     }
 
     #vid_btn button {
         font-size: 7rem;
+    }
+
+    .with_nawa {
+        height: auto;
+    }
+
+    .nawa_partner {
+        padding: 0;
     }
 
     .nawa_partner p {
@@ -421,11 +499,21 @@
         font-weight: bold;
     }
 
+    .nawa_partner p:nth-of-type(2) {
+        display: none;
+    }
+
     .nawa_partner ul {
-        gap: 0;
+        margin: 20px 0;
+        gap: 20px;
+        grid-template-columns: 25% 25% 25%;
     }
 
     .logo {
         width: 10rem;
+    }
+
+    .map iframe {
+        height: 250px;
     }
 }

@@ -41,6 +41,20 @@ header.on {
     background-color: #585858;
 }
 
+/*모바일 특정 섹션에서 nav 배경 제거*/
+
+header.no-bg {
+    background: none;
+}
+
+header.no-bg .main_logo {
+    background: no-repeat center / contain url(img/logo_rev.png);
+}
+
+header.no-bg button {
+    color: white;
+}
+
 header>div:nth-child(1) {
     position: relative;
     height: 100%;
