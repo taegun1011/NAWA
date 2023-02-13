@@ -23,6 +23,7 @@ $(window).scroll(function () {
         $("header").removeClass("no-bg")
     }
 })
+
 if ($(window).width() > 768) {
     $(".color_option span").click(function (e) {
         $(".on").removeClass("on")
@@ -30,10 +31,10 @@ if ($(window).width() > 768) {
         if (e.target.dataset.color == "pink") {
             $(".change_img").attr("src", "img/nawa_cup1.png")
         }
-        if (e.target.dataset.color == "black") {
+        else if (e.target.dataset.color == "black") {
             $(".change_img").attr("src", "img/nawa_cup1_black.png")
         }
-        if (e.target.dataset.color == "gray") {
+        else if (e.target.dataset.color == "gray") {
             $(".change_img").attr("src", "img/nawa_cup1_gray.png")
         }
     })
