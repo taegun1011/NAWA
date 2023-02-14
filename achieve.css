@@ -35,8 +35,7 @@ body {
 .top div div {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
 }
 
 .top button {
