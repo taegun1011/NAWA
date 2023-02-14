@@ -53,9 +53,9 @@ section {
 .nawa_product img {
     display: block;
     position: absolute;
-    top: 15%;
-    left: -8rem;
-    width: 80%;
+    top: 11%;
+    left: 8rem;
+    width: 60%;
 }
 
 .nawa_product>div:last-child {
@@ -71,14 +71,14 @@ section {
 
 .nawa_product h2 {
     margin-bottom: 1.5rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1.5;
 }
 
 .nawa_product strong {
     display: block;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 
@@ -100,13 +100,13 @@ section {
 
 .question p:nth-of-type(2) {
     color: #898989;
-    transition-delay: .75s;
+    transition-delay: .5s;
 
     font-size: 4rem;
 }
 
 .question p:nth-of-type(3) {
-    transition-delay: 1.5s;
+    transition-delay: 1s;
 }
 
 /* question rise 효과 */
@@ -136,13 +136,14 @@ section {
 .process p {
     font-size: 4.3rem;
     font-weight: bold;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .process ol,
 .process_2 ol {
     display: flex;
-    gap: 5rem
+    justify-content: center;
+    gap: 10rem;
 }
 
 .process p,
@@ -165,20 +166,26 @@ section {
     align-items: center;
     background-color: white;
     border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
-    font-size: 2.5rem;
+    width: 45rem;
+    height: 45rem;
+    font-size: 4rem;
     font-weight: 400;
+    line-height: 1.8;
     text-align: center;
     transition-delay: .5s;
 }
 
+.process li:nth-of-type(1),
+.process_2 li:nth-of-type(1) {
+    line-height: normal;
+}
+
 .process li:nth-of-type(2) {
-    transition-delay: 1s;
+    transition-delay: .7s;
 }
 
 .process li:nth-of-type(3) {
-    transition-delay: 1.5s;
+    transition-delay: 1s;
 }
 
 .situ {
@@ -248,9 +255,9 @@ section {
 }
 
 .product_2 {
-    background: linear-gradient(to bottom, #F7F7F7, white);
     max-width: none;
     height: auto;
+    overflow: none;
 }
 
 .product_2>div {
@@ -290,6 +297,10 @@ section {
 .process_2 {
     height: auto;
     text-align: center;
+}
+
+.process_2 ol {
+    margin: 10rem 0 20rem;
 }
 
 .process_2 li,
@@ -396,9 +407,11 @@ section {
         gap: 2rem
     }
 
-    .process li {
+    .process li,
+    .process_2 li {
         width: 25vw;
         height: 25vw;
+        font-size: 18px
     }
 }
 

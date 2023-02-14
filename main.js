@@ -24,13 +24,13 @@ if ($(window).width() > 768) {
         $(".on").removeClass("on")
         $(this).addClass("on")
         if (e.target.dataset.color == "pink") {
-            $(".nawa_product").css("background", "no-repeat center /contain url(img/nawa_cup1.png), #f5f5f5")
+            $(".nawa_product").css("background", "no-repeat center /180% url(img/nawa_cup1.png), #f5f5f5")
         }
         else if (e.target.dataset.color == "black") {
-            $(".nawa_product").css("background", "no-repeat center /contain url(img/nawa_cup1_black.png), #f5f5f5")
+            $(".nawa_product").css("background", "no-repeat center /180% url(img/nawa_cup1_black.png), #f5f5f5")
         }
         else if (e.target.dataset.color == "gray") {
-            $(".nawa_product").css("background", "no-repeat center /contain url(img/nawa_cup1_gray.png), #f5f5f5")
+            $(".nawa_product").css("background", "no-repeat center /180% url(img/nawa_cup1_gray.png), #f5f5f5")
         }
     })
 }
