@@ -269,6 +269,10 @@ footer div>p {
         position: relative;
     }
 
+    header ul li a::after {
+        display: none;
+    }
+
     .nav-btn {
         display: block;
     }
