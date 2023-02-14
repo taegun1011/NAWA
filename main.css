@@ -139,6 +139,7 @@ header ul li:hover a::after {
     border: none;
     outline: none;
     font-size: 18px;
+    color: #000;
     cursor: pointer;
 }
 

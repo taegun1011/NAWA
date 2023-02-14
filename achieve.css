@@ -47,6 +47,7 @@ body {
     border: none;
     outline: none;
     font-size: 2rem;
+    color: #000;
     cursor: pointer;
 }
 
