@@ -386,7 +386,7 @@
     .intro_nawa>div>div {
         width: auto;
         left: 2rem;
-        top: 20%;
+        top: 27%;
         transform: none;
     }
 
@@ -465,9 +465,9 @@
     }
 
     .nawa_partner ul {
-        margin: 20px 0;
+        max-width: 90vw;
+        margin: 20px auto;
         gap: 20px;
-        grid-template-columns: 25% 25% 25%;
     }
 
     .logo {
