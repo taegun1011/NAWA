@@ -1,6 +1,6 @@
 var list = [];
 
-$.get('test.json').then((data) => {
+$.get('list.json').then((data) => {
     list = data.articles;
 
     list.forEach(function (a) {
@@ -14,6 +14,12 @@ $.get('test.json').then((data) => {
                             </a>
                          </li>`)
     })
-    
 
+    $(".card").each(function (index, item) {
+        let n = $(item).data('id');
+        if (n <= 9 && n > 0) {
+            var number1 = $(item);
+            console.log(number1)
+        }
+    })
 })
