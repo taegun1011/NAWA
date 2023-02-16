@@ -26,4 +26,8 @@ $(".index span").click(function (e) {
         $(".ind_3").css("display", "flex")
         $(".ind_1,.ind_2").css("display", "none")
     }
+    if (e.target.innerText == "4") {
+        $(".ind_4").css("display", "flex")
+        $(".ind_1,.ind_2,.ind_3").css("display", "none")
+    }
 })
