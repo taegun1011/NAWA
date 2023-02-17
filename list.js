@@ -35,24 +35,45 @@ $.get('list.json').then((data) => {
         article.push(item);
     })
 
-    makeNone(...article);
-    makeBlock(...article.slice(0, 9)); // 웹버전일때 
+    if ($(window).width() > 767) {
+        makeNone(...article);
+        makeBlock(...article.slice(0, 9)); // 웹버전일때 
 
-    $(".index span").click(function (e) {
-        $(".on").removeClass("on")
-        $(this).addClass("on")
-        if (e.target.innerText == "1") {
-            makeNone(...article);
-            makeBlock(...article.slice(0, 9));
-        }
-        if (e.target.innerText == "2") {
-            makeNone(...article);
-            makeBlock(...article.slice(10, 19));
-        }
-        if (e.target.innerText == "3") {
-            makeNone(...article);
-            makeBlock(...article.slice(19, 28));
-        }
-    })
+        $(".index span").click(function (e) {
+            $(".on").removeClass("on")
+            $(this).addClass("on")
+            if (e.target.innerText == "1") {
+                makeNone(...article);
+                makeBlock(...article.slice(0, 9));
+            }
+            if (e.target.innerText == "2") {
+                makeNone(...article);
+                makeBlock(...article.slice(10, 19));
+            }
+            if (e.target.innerText == "3") {
+                makeNone(...article);
+                makeBlock(...article.slice(19, 28));
+            }
+        })
+    } else {
+        makeNone(...article);
+        makeBlock(...article.slice(0, 8)); // 모바일일때 
 
+        $(".index span").click(function (e) {
+            $(".on").removeClass("on")
+            $(this).addClass("on")
+            if (e.target.innerText == "1") {
+                makeNone(...article);
+                makeBlock(...article.slice(0, 8));
+            }
+            if (e.target.innerText == "2") {
+                makeNone(...article);
+                makeBlock(...article.slice(9, 17));
+            }
+            if (e.target.innerText == "3") {
+                makeNone(...article);
+                makeBlock(...article.slice(18, 26));
+            }
+        })
+    }
 })
