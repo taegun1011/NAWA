@@ -13,10 +13,13 @@ $.get('list.json').then((data) => {
                             </span>
                             </a>
                          </li>`)
-    })
+    });
 
+    var article = [] // 보관함 생성
 
-    var article = [] // 보관함 생성(9개씩 나눠서 보관, 필요시 더 number4..5등 추가해야함)
+    $(".card").each(function (index, item) {
+        article.push(item);
+    }) 
 
     function makeBlock(...rest) {
         return rest.forEach(function (a, i) {
@@ -29,11 +32,6 @@ $.get('list.json').then((data) => {
             a.style.display = 'none'
         })
     } //css none 변경함수
-
-    $(".card").each(function (index, item) {
-        let n = $(item).data('id');
-        article.push(item);
-    })
 
     if ($(window).width() > 767) {
         makeNone(...article);
