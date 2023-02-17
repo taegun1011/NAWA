@@ -109,7 +109,7 @@ section {
     transition-delay: 1s;
 }
 
-/* question rise 효과 */
+/* question rise �④낵 */
 .question p {
     transform: translateY(50px);
     opacity: 0;
