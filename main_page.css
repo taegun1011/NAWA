@@ -96,6 +96,8 @@
 .nawa_found_item p {
     font-size: 2.6rem;
     line-height: 2;
+    white-space: nowrap;
+    word-break: unset;
     transition-delay: .5s;
 }
 
