@@ -16,22 +16,7 @@ $.get('list.json').then((data) => {
     })
 
 
-    var number1 = [],
-        number2 = [],
-        number3 = []; // 보관함 생성(9개씩 나눠서 보관, 필요시 더 number4..5등 추가해야함)
-
-    $(".card").each(function (index, item) {
-        let n = $(item).data('id');
-        if (n >= 0 && n < 9) {
-            $(item).hide()
-            number1.push(item);
-        } else if (n >= 9 && n < 18) {
-            $(item).hide()
-            number2.push(item);
-        } else if (n >= 18 && n < 27) {
-            number3.push(item);
-        }
-    })
+    var article = [] // 보관함 생성(9개씩 나눠서 보관, 필요시 더 number4..5등 추가해야함)
 
     function makeBlock(...rest) {
         return rest.forEach(function (a, i) {
@@ -45,24 +30,28 @@ $.get('list.json').then((data) => {
         })
     } //css none 변경함수
 
+    $(".card").each(function (index, item) {
+        let n = $(item).data('id');
+        article.push(item);
+    })
+
+    makeNone(...article);
+    makeBlock(...article.slice(0, 9)); // 웹버전일때 
+
     $(".index span").click(function (e) {
         $(".on").removeClass("on")
         $(this).addClass("on")
-
         if (e.target.innerText == "1") {
-            makeBlock(...number3);
-            makeNone(...number2);
-            makeNone(...number1);
+            makeNone(...article);
+            makeBlock(...article.slice(0, 9));
         }
         if (e.target.innerText == "2") {
-            makeNone(...number1);
-            makeBlock(...number2);
-            makeNone(...number3);
+            makeNone(...article);
+            makeBlock(...article.slice(10, 19));
         }
         if (e.target.innerText == "3") {
-            makeBlock(...number1);
-            makeNone(...number2);
-            makeNone(...number3);
+            makeNone(...article);
+            makeBlock(...article.slice(19, 28));
         }
     })
 
