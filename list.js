@@ -1,6 +1,6 @@
 var list = [];
 
-$.get('list.json').then((data) => {
+$.get('list.json').done((data) => {
     list = data.articles;
 
     list.forEach(function (a) {
@@ -19,7 +19,7 @@ $.get('list.json').then((data) => {
 
     $(".card").each(function (index, item) {
         article.push(item);
-    }) 
+    })
 
     function makeBlock(...rest) {
         return rest.forEach(function (a, i) {
@@ -74,4 +74,6 @@ $.get('list.json').then((data) => {
             }
         })
     }
-})
+}).fail(function () {
+    $('.article-list').append("현재 준비중입니다.")
+ })
