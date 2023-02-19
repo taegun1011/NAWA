@@ -70,7 +70,7 @@
 
 .nawa_found h2 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 500;
 }
 
@@ -89,19 +89,21 @@
 
 .nawa_found_item {
     display: flex;
-    margin-top: 4rem;
+    margin-top: 6rem;
     gap: 5rem;
 }
 
 .nawa_found_item p {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     line-height: 2;
+    white-space: nowrap;
+    word-break: unset;
     transition-delay: .5s;
 }
 
 .nawa_found_item p:not(:first-child) {
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
@@ -115,7 +117,7 @@
 
 .nawa_found_item img {
     width: auto;
-    height: 23rem;
+    height: 30rem;
     transition-delay: .5s;
 }
 
@@ -209,14 +211,13 @@
 }
 
 .video_wrap {
-    width: 90vw;
-    height: 50vh;
+    width: 60vw;
 }
 
 .video_wrap video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .nawa_partner {

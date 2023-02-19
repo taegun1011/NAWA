@@ -139,6 +139,7 @@ header ul li:hover a::after {
     border: none;
     outline: none;
     font-size: 18px;
+    color: #000;
     cursor: pointer;
 }
 
@@ -266,6 +267,10 @@ footer div>p {
     header ul a {
         font-size: 3.5rem;
         position: relative;
+    }
+
+    header ul li a::after {
+        display: none;
     }
 
     .nav-btn {

@@ -109,7 +109,7 @@ section {
     transition-delay: 1s;
 }
 
-/* question rise 효과 */
+/* question rise �④낵 */
 .question p {
     transform: translateY(50px);
     opacity: 0;
@@ -496,7 +496,7 @@ section {
     }
 
     .situ .change-situ p:first-child {
-        padding-top: 100px;
+        padding-top: 5%;
         margin-bottom: 20px;
         text-align: center;
         font-size: 2.4rem;
@@ -506,7 +506,7 @@ section {
     .change-situ ol {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .change-situ li {
@@ -540,7 +540,8 @@ section {
     }
 
     .situ .change-situ p:last-child {
-        margin-top: 10rem;
+        margin-top: 5%;
+        padding-bottom: 5%;
     }
 
     .situ .change-situ p:last-child span {
@@ -551,7 +552,6 @@ section {
 
     .situ .change-situ p:last-child span:first-child {
         font-weight: bold;
-        margin-bottom: 2rem;
     }
 
     .situ .change-situ p:last-child span:nth-child(2) {
@@ -571,7 +571,7 @@ section {
 
     .situ strong {
         font-size: 6rem;
-        padding-left:1rem;
+        padding-left: 1rem;
     }
 
     .product_2 img {
@@ -580,7 +580,7 @@ section {
 
     .product_2>div div {
         position: absolute;
-        left: 52%;
+        left: 50%;
         top: 18%;
     }
 
