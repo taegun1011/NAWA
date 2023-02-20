@@ -84,7 +84,7 @@ button.form_base:hover {
     height: 100vh;
     position: fixed;
     z-index: 2000;
-    /* display: none; */
+    display: none;
 }
 
 .email_container .filter {
