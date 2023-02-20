@@ -79,6 +79,48 @@ button.form_base:hover {
     background-color: black;
 }
 
+.email_container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 2000;
+    /* display: none; */
+}
+
+.email_container .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+.email_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    position: relative;
+}
+
+.email_txt p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.close_popup {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
 .map {
     text-align: center;
     font-size: 0;
@@ -104,6 +146,19 @@ button.form_base:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .email_txt {
+        width: 300px;
+        height: 200px;
+    }
+
+    .email_txt p {
+        font-size: 16px;
+    }
+
+    .close_popup {
+        font-size: 20px;
     }
 }
 

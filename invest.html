@@ -84,6 +84,18 @@
                     </fieldset>
                 </div>
             </div>
+            <div class="email_container">
+                <div class="filter">
+                    <div class="email_txt">
+                        <p>메일이 전송되었습니다.<br>
+                            빠른 시일내 확인 후 답장드리겠습니다.
+                        </p>
+                        <button class="close_popup">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="map">
             <iframe
@@ -106,30 +118,56 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="custom.js" type="text/javascript"></script>
-    <script>
-        $("#send_bt").click(function () {
-            email();
-        });
-        function email() {
-            var param = {
-                title: $("#subject").val(),
-                name: $("#user_name").val(),
-                content: $("#msg").val()
-            } // json 데이터타입
-
-            $.ajax({
-                url: "fmail.php",
-                type: "POST",
-                async: true,
-                data: param,
-                dataType: "JSON",
-                success: function (data) {
-                    if (data.result == "true") {
-                        alert("메일 전송이 완료 되었습니다.")
-                    }
-                }
-            });
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        function scrollDisable(selector) {
+            $(selector).on('scroll mousewheel touchmove', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            })
         }
+
+        function scrollAble(selector) {
+            $(selector).off('scroll mousewheel touchmove')
+        }
+
+        scrollDisable('.email_container')
+
+        $(document).ready(function () {
+            emailjs.init("Bm2F5GlT8Y_9K-aCm");
+            $('#send_bt').click(function () {
+
+                var templateParams = {
+                    //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
+                    name: $('#user_name').val(),
+                    subject: $('#subject').val(),
+                    msg: $('#msg').val()
+                };
+
+                emailjs.send('service_mv19fza', 'template_3qtm6zs', templateParams)
+                    //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
+                    .then(function () {
+                        $(".email_container").show();
+                        scrollDisable(".email_contianer")
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        });
+        $(".close_popup").click(function () {
+            $(".email_container").hide();
+            scrollAble(".email_container")
+        })
+        $(".email_container").click(function (e) {
+            if ($(".filter").has(e.target).length === 0) {
+                $(this).hide()
+            }
+
+        })
+        scrollDisable(".email_contianer")
+
     </script>
 </body>
 
