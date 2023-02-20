@@ -115,6 +115,7 @@ button.form_base:hover {
     font-size: 25px;
     border: none;
     outline: none;
+    background: none;
     position: absolute;
     right: 15px;
     top: 5px;
