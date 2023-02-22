@@ -54,9 +54,11 @@ $.get('list.json').done((data) => {
             }
         })
     } else {
+        $(".index").append(`<span>4</span>`) // 인덱스 숫자추가
+
         makeNone(...article);
         makeBlock(...article.slice(0, 8)); // 모바일일때 
-
+        
         $(".index span").click(function (e) {
             $(".on").removeClass("on")
             $(this).addClass("on")
@@ -71,6 +73,10 @@ $.get('list.json').done((data) => {
             if (e.target.innerText == "3") {
                 makeNone(...article);
                 makeBlock(...article.slice(16, 24));
+            }
+            if (e.target.innerText == "4") {
+                makeNone(...article);
+                makeBlock(...article.slice(24, 32));
             }
         })
     }

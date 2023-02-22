@@ -1,16 +1,23 @@
 {
     "articles": [
         {
-            "id": 24,
+            "id": 25,
             "href": "http://www.issuemaker.kr/news/articleView.html?idxno=34919",
             "src": "img/article/230217이슈메이커.jpg",
-            "title": "'N.A.W.A'&'PARROT CLINIC'&<br>'CAFE IN ART' 3자 MOU 체결",
+            "title": "'N.A.W.A'&<br>'PARROT CLINIC'&<br>'CAFE IN ART' MOU 체결",
             "info": "이슈메이커 23.02.17."
+        },
+        {
+            "id": 24,
+            "href": "http://www.ccnnews.co.kr/news/articleView.html?idxno=285523",
+            "src": "img/article/230215이슈_충청.jpg",
+            "title": "고려대 세종 스타트업<br>NAWA - 일본 스타트업<br>아로마조인과 상생협약",
+            "info": "충청뉴스 23.02.16."
         },
         {
             "id": 23,
             "href": "http://www.issuemaker.kr/news/articleView.html?idxno=34918",
-            "src": "img/article/230215이슈메이커.jpg",
+            "src": "img/article/230215이슈_충청.jpg",
             "title": "스타트업 'NAWA'<br>일본 교토 소재 스타트업<br>아로마조인과 MOU 체결",
             "info": "이슈메이커 23.02.15."
         },
@@ -30,27 +37,20 @@
         },
         {
             "id": 20,
+            "href": "http://www.startupdaily.kr/news/articleView.html?idxno=2681",
+            "src": "img/article/230209스타트업.jpg",
+            "title": "스타트업 'NAWA'<br>스타트업 '0SHELL'<br>업무 상생 협약 체결",
+            "info": "스타트업데일리 23.02.09."
+        },
+        {
+            "id": 19,
             "href": "http://www.issuemaker.kr/news/articleView.html?idxno=34871",
             "src": "img/article/230202이슈메이커.jpg",
             "title": "스타트업 'NAWA'<br>스타트업 '스틸마스프링'<br>MOU 협약 체결",
             "info": "이슈메이커 23.02.02."
         },
         {
-            "id": 19,
-            "href": "http://www.issuemaker.kr/news/articleView.html?idxno=34871",
-            "src": "img/article/230201이슈메이커.jpg",
-            "title": "스타트업 'NAWA'<br>스타트업 '0SHELL'<br>업무 상생 협약 체결",
-            "info": "이슈메이커 23.02.01."
-        },
-        {
             "id": 18,
-            "href": "http://www.issuemaker.kr/news/articleView.html?idxno=34861",
-            "src": "img/article/230131이슈메이커.jpg",
-            "title": "스타트업 'NAWA'<br>(주)PAL문화유산센터<br>업무 상생 협약 체결",
-            "info": "이슈메이커 23.01.31."
-        },
-        {
-            "id": 17,
             "href": "http://www.issuemaker.kr/news/articleView.html?idxno=34855",
             "src": "img/article/230130이슈메이커.jpg",
             "title": "NAWA<br>ESG가치 확신 위한<br>5자 업무 상생 협약 체결",
@@ -81,7 +81,7 @@
             "id": 14,
             "href": "https://www.etnews.com/20221215000260",
             "src": "img/article/221215전자신문.jpg",
-            "title": "충청권 ICT 이노베이션<br>우수사례 '스마트 쓰레기통'<br>서영호씨 소개",
+            "title": "충청권 ICT 이노베이션<br>우수사례 '스마트 쓰레기통'<br>서영호 대표 소개",
             "info": "전자신문 22.12.15."
         },
         {
