@@ -46,11 +46,11 @@ $.get('list.json').done((data) => {
             }
             if (e.target.innerText == "2") {
                 makeNone(...article);
-                makeBlock(...article.slice(10, 19));
+                makeBlock(...article.slice(9, 18));
             }
             if (e.target.innerText == "3") {
                 makeNone(...article);
-                makeBlock(...article.slice(19, 28));
+                makeBlock(...article.slice(18, 27));
             }
         })
     } else {
@@ -66,14 +66,15 @@ $.get('list.json').done((data) => {
             }
             if (e.target.innerText == "2") {
                 makeNone(...article);
-                makeBlock(...article.slice(9, 17));
+                makeBlock(...article.slice(8, 16));
             }
             if (e.target.innerText == "3") {
                 makeNone(...article);
-                makeBlock(...article.slice(18, 26));
+                makeBlock(...article.slice(16, 24));
             }
         })
     }
 }).fail(function () {
-    $('.article-list').append("현재 준비중입니다.")
- })
+    $('.article-list').css('display', 'block')
+    $('.article-list').append("<p style='text-align:center; font-size:16px; font-weight:bold; color:red;'>현재 준비중입니다.</p>")
+})
