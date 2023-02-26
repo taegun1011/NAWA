@@ -1,6 +1,13 @@
 {
     "articles": [
         {
+            "id": 26,
+            "href": "http://s.korea.ac.kr/user/boardList.do?boardId=1464&siteId=kr&id=kr_060200000000&boardSeq=176254&command=view",
+            "src": "img/article/230223세종뉴스.jpg",
+            "title": "스타트업 'NAWA'<br>대학혁신지원사업<br> 성과확산 포럼 참석",
+            "info": "KU Sejong News 23.02.23."
+        },
+        {
             "id": 25,
             "href": "http://www.issuemaker.kr/news/articleView.html?idxno=34932",
             "src": "img/article/230222이슈메이커.jpg",
