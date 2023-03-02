@@ -52,13 +52,17 @@ $.get('list.json').done((data) => {
                 makeNone(...article);
                 makeBlock(...article.slice(18, 27));
             }
+            if (e.target.innerText == "4") {
+                makeNone(...article);
+                makeBlock(...article.slice(27, 36));
+            }
         })
     } else {
-        $(".index").append(`<span>4</span>`) // 인덱스 숫자추가
+        // $(".index").append(`<span>4</span>`) // 인덱스 숫자추가
 
         makeNone(...article);
         makeBlock(...article.slice(0, 8)); // 모바일일때 
-        
+
         $(".index span").click(function (e) {
             $(".on").removeClass("on")
             $(this).addClass("on")
