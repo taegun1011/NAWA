@@ -269,10 +269,6 @@
 
 @media (max-width:768px) {
 
-    .intro_nawa>div:not(.filter) {
-        background: no-repeat 60% 0 /cover url(img/main_picture.jpg);
-    }
-
     .intro_nawa>div>div {
         left: 3.6rem;
         top: 30%;
