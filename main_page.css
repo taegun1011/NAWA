@@ -15,7 +15,7 @@
 
 .intro_nawa>div:not(.filter) {
     position: relative;
-    background: no-repeat center /cover url(img/main_picture.png);
+    background: no-repeat center /cover url(img/main_picture.jpg);
     max-width: none;
     height: 100%;
 }
@@ -270,7 +270,7 @@
 @media (max-width:768px) {
 
     .intro_nawa>div:not(.filter) {
-        background: no-repeat 60% 0 /cover url(img/main_picture.png);
+        background: no-repeat 60% 0 /cover url(img/main_picture.jpg);
     }
 
     .intro_nawa>div>div {
