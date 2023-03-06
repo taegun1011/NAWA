@@ -69,22 +69,29 @@ else {
     })
 }
 
+if ($(window).width() < 768) {
+    $(".nawa_product h2").html("Paper Cup Collection<br>Smart Trash Can <strong>Cupggiri</strong>")
+}
+
 var changeSitu = `<div class="change-situ">
-<p>종이컵 재활용에는<br>복잡한 과정이 필요합니다</p>
+<p>Recycling paper cups...<br>
+It's a complicated process.</p>
 <ol>
-<li><span>깨끗한 세척<br>+<br>컵끼리 모으기</span></li>
-<li><span>대량의<br>종이컵 회수<br>가능 인력</span></li>
-<li><span>종이컵<br>재활용 업체와의<br>협력</span></li>
+<li><span>Clean cleaning<br>+<br>Gathering cups together.</span></li>
+<li><span>A great deal of<br>
+Recovery<br>
+possible personnel</span></li>
+<li><span>With a recycling company<br>
+cooperation</span></li>
 </ol>
 <p>
-<span>복잡한 과정 때문에</span>
-<span>1년 종이컵 사용량 약 230억 개 기준</span>
-<span>연 평균 종이컵 재활용률</span>
-<span>단,<strong>1%</strong></span>
+<span>Because of the complicated process,</span>
+<span>About 23 billion paper cups used per year</span>
+<span>Average annual paper cup recycling rate</span>
+<span>Just,<strong>1%</strong></span>
 </p>
 </div>`;
 if ($(window).width() < 500) {
-    $(".question p:nth-of-type(2)").html("종이끼리 같이 모아서 버리기?<br>폐지와 같이 버리기?<br>일반쓰레기로 분류하기?")
+    $(".question p:nth-of-type(2)").html("Putting paper together<br>and throwing it away?<br>Throw it away with waste paper?<br>Classifying it as general garbage?")
     $(".filter").prepend(changeSitu)
-    $(".process_2 p").html("HOW TO PROCESS")
 }

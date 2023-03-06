@@ -1,3 +1,9 @@
+if ($(window).width() < 768) {
+    $(".intro_nawa p").eq(0).html("Paper cup <br> recycling rate 1%<br> for escape")
+    $(".nawa_found p").eq(2).html("NO ANSWER<br>WE ANSWER")
+    $(".nawa_product h2").html("Paper Cup Collection<br>Smart Trash Can <strong>Cupggiri</strong>")
+}
+
 if ($(window).width() > 768) {
     $(".color_option span").click(function (e) {
         $(".on").removeClass("on")
