@@ -151,6 +151,37 @@ header.on .nav-btn button {
     display: none;
 }
 
+.change-lang {
+    gap: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.change-lang li {
+    padding: 0 1.2rem;
+    height: auto;
+    position: relative;
+}
+
+.change-lang li:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background: #d1d6db;
+    position: absolute;
+    right: 0;
+}
+
+.change-lang li:not(.on) a {
+    color: #d1d6db;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -246,7 +277,7 @@ footer div>p {
         height: 2.5rem;
     }
 
-    header ul {
+    header nav ul {
         flex-direction: column;
         justify-content: center;
         position: fixed;
@@ -255,6 +286,9 @@ footer div>p {
         background: rgb(25, 25, 25);
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    header ul {
         display: none;
     }
 
@@ -275,6 +309,14 @@ footer div>p {
 
     .nav-btn {
         display: block;
+    }
+
+    .change-lang {
+        right: 40px;
+    }
+
+    .change-lang a {
+        font-size: 1.6rem;
     }
 
     footer>div {
