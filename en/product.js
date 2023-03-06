@@ -78,11 +78,8 @@ var changeSitu = `<div class="change-situ">
 It's a complicated process.</p>
 <ol>
 <li><span>Clean cleaning<br>+<br>Gathering cups together.</span></li>
-<li><span>A great deal of<br>
-Recovery<br>
-possible personnel</span></li>
-<li><span>With a recycling company<br>
-cooperation</span></li>
+<li><span>Lots of paper cup recovery people</span></li>
+<li><span>Cooperation with recycling companies</span></li>
 </ol>
 <p>
 <span>Because of the complicated process,</span>

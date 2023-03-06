@@ -143,7 +143,7 @@ section {
 .process_2 ol {
     display: flex;
     justify-content: center;
-    gap: 10rem;
+    gap: 5%;
 }
 
 .process p,
@@ -351,12 +351,23 @@ section {
         left: 60%;
     }
 
+    .process li,
+    .process_2 li {
+        width: 35rem;
+        height: 35rem;
+    }
 }
 
 @media(max-width:989px) {
     .nawa_product img {
         width: 120%;
         left: -30%;
+    }
+
+    .process li,
+    .process_2 li {
+        width: 30rem;
+        height: 30rem;
     }
 }
 
