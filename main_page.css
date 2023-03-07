@@ -22,7 +22,7 @@
 
 .intro_nawa>div>div {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 34.5%;
     transform: translate(-50%, -50%);
     z-index: 20;
@@ -268,9 +268,8 @@
 }
 
 @media (max-width:768px) {
-
     .intro_nawa>div:not(.filter) {
-        background: no-repeat 60% 0 /cover url(img/main_picture.png);
+        background-image: url(img/main_picture2.jpg);
     }
 
     .intro_nawa>div>div {
@@ -452,8 +451,6 @@
     }
 
     .with_nawa {
-        height: 50vh;
-        min-height: 420px;
         display: flex;
         justify-content: center;
         align-items: center;
