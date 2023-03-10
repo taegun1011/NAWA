@@ -55,22 +55,19 @@ textarea::placeholder {
 }
 
 textarea {
-    padding-top: 1rem
+    padding-top: 1rem;
+    height: 30rem;
 }
 
 button.form_base {
     border-radius: 3rem;
     border: none;
     background-color: #585858;
-
     width: 40rem;
     height: 5rem;
-    margin-top: 5rem;
-
     font-size: 1.8rem;
     text-align: center;
     color: white;
-
     transition: ease all .5s;
     cursor: pointer;
 }
@@ -173,7 +170,6 @@ button.form_base:hover {
 
     button.form_base {
         width: 35rem;
-        margin-top: 3rem;
     }
 
     iframe {
