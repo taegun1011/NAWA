@@ -129,6 +129,7 @@ button.form_base:hover {
     .contact {
         flex-direction: column;
         gap: 3rem;
+        top: 15%;
     }
 
     .contact h2 {

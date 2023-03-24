@@ -166,13 +166,28 @@
                     msg: $('#msg').val()
                 };
 
-                emailjs.send('service_mv19fza', 'template_3qtm6zs', templateParams)
-                    .then(function () {
-                        $(".email_container").show();
-                        scrollDisable(".email_contianer")
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                    });
+                //유효성 검사
+                if (!/[ㄱ-ㅎ가-힣]+|[a-zA-Z]/g.test($('#user_name').val())) {
+                    $('.email_txt> p').html('Please enter your name correctly.')
+                    $(".email_container").show();
+                    e.preventDefault();
+                } else if ($('#subject').val().length < 5) {
+                    $('.email_txt> p').html('Please enter at least 5 letters of the title')
+                    $(".email_container").show();
+                    e.preventDefault();
+                } else if ($('#msg').val().length < 10) {
+                    $('.email_txt> p').html('Please enter at least 10 characters')
+                    $(".email_container").show();
+                    e.preventDefault();
+                } else {
+                    emailjs.send('service_mv19fza', 'template_3qtm6zs', templateParams)
+                        .then(function () {
+                            $(".email_container").show();
+                            scrollDisable(".email_contianer")
+                        }, function (error) {
+                            console.log('FAILED...', error);
+                        });
+                }
             });
         });
         $(".close_popup").click(function () {

@@ -157,7 +157,7 @@
 
         $(document).ready(function () {
             emailjs.init("Bm2F5GlT8Y_9K-aCm");
-            $('#send_bt').click(function () {
+            $('#send_bt').click(function (e) {
 
                 var templateParams = {
                     name: $('#user_name').val(),
@@ -165,13 +165,28 @@
                     msg: $('#msg').val()
                 };
 
-                emailjs.send('service_mv19fza', 'template_3qtm6zs', templateParams)
-                    .then(function () {
-                        $(".email_container").show();
-                        scrollDisable(".email_contianer")
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                    });
+                // 유효성 검사
+                if (!/[ㄱ-ㅎ가-힣]+|[a-zA-Z]/g.test($('#user_name').val())) {
+                    $('.email_txt> p').html('성함을 올바르게 입력해주세요.')
+                    $(".email_container").show();
+                    e.preventDefault();
+                } else if ($('#subject').val().length < 5) {
+                    $('.email_txt> p').html('제목을 5자 이상 입력해주세요')
+                    $(".email_container").show();
+                    e.preventDefault();
+                } else if ($('#msg').val().length < 10) {
+                    $('.email_txt> p').html('제목을 10자 이상 입력해주세요')
+                    $(".email_container").show();
+                    e.preventDefault();
+                } else {
+                    emailjs.send('service_mv19fza', 'template_3qtm6zs', templateParams)
+                        .then(function () {
+                            $(".email_container").show();
+                            scrollDisable(".email_contianer")
+                        }, function (error) {
+                            console.log('FAILED...', error);
+                        });
+                }
             });
         });
         $(".close_popup").click(function () {
