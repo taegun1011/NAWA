@@ -166,7 +166,7 @@
                 };
 
                 // 유효성 검사
-                if (!/[ㄱ-ㅎ가-힣]+|[a-zA-Z]/g.test($('#user_name').val())) {
+                if (/[ㄱ-ㅎ가-힣]+|[a-zA-Z]/g.test($('#user_name').val()) == false) {
                     $('.email_txt> p').html('성함을 올바르게 입력해주세요.')
                     $(".email_container").show();
                     e.preventDefault();
