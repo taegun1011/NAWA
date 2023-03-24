@@ -182,6 +182,7 @@
                 } else {
                     emailjs.send('service_mv19fza', 'template_3qtm6zs', templateParams)
                         .then(function () {
+                            $('.email_txt> p').html('Your mail has been sent.<br>We will check and reply to you as soon as possible.')
                             $(".email_container").show();
                             scrollDisable(".email_contianer")
                         }, function (error) {

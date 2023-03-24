@@ -181,6 +181,7 @@
                 } else {
                     emailjs.send('service_mv19fza', 'template_3qtm6zs', templateParams)
                         .then(function () {
+                            $('.email_txt> p').html('메일이 전송되었습니다.<br>빠른 시일내 확인 후 답장드리겠습니다.')
                             $(".email_container").show();
                             scrollDisable(".email_contianer")
                         }, function (error) {
