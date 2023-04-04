@@ -1,6 +1,13 @@
 {
     "articles": [
         {
+            "id": 29,
+            "href": "http://www.dynews.co.kr/news/articleView.html?idxno=698493",
+            "src": "img/article/230331동양일보.jpg",
+            "title": "친환경 아이템으로 창업 도전..<br>종이컵 스마트 쓰레기통 개발",
+            "info": "동양일보 23.03.31."
+        },
+        {
             "id": 28,
             "href": "http://www.issuemaker.kr/news/articleView.html?idxno=34952",
             "src": "img/article/230302이슈메이커2.jpg",

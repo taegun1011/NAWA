@@ -1,6 +1,13 @@
 {
     "articles": [
         {
+            "id": 29,
+            "href": "http://www.dynews.co.kr/news/articleView.html?idxno=698493",
+            "src": "../img/article/230331동양일보.jpg",
+            "title": "Challenge to start<br>a business with<br>eco-friendly items..",
+            "info": "DY NEWS 23.03.31."
+        },
+        {
             "id": 28,
             "href": "http://www.issuemaker.kr/news/articleView.html?idxno=34952",
             "src": "../img/article/230302이슈메이커2.jpg",
