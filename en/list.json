@@ -1,6 +1,13 @@
 {
     "articles": [
         {
+            "id": 30,
+            "href": "https://www.kmaeil.com/news/articleView.html?idxno=393892",
+            "src": "../img/article/230410경인.jpg",
+            "title": "'NAWA', a company that<br>realizes the social value<br>of recycling",
+            "info": "KMAEIL 23.04.10."
+        },
+        {
             "id": 29,
             "href": "http://www.dynews.co.kr/news/articleView.html?idxno=698493",
             "src": "../img/article/230331동양일보.jpg",
