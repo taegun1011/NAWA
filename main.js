@@ -18,7 +18,7 @@ if ($(window).width() > 768) {
             $(".change_img").attr("src", "img/nawa_cup1_gray.png")
         }
     })
-} else if ($(window).width() < 768 && $(window).width() > 500) {
+} else if ($(window).width() < 767 && $(window).width() > 500) {
     $(".color_option span").click(function (e) {
         $(".on").removeClass("on")
         $(this).addClass("on")
