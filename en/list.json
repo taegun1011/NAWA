@@ -1,11 +1,18 @@
 {
     "articles": [
         {
+            "id": 32,
+            "href": "http://www.startupdaily.kr/news/articleView.html?idxno=3211",
+            "src": "../img/article/230427스타트업.jpg",
+            "title": "'NAWA' MOU with<br>'DAGACHI'",
+            "info": "startupdaily 23.04.27."
+        },
+        {
             "id": 31,
             "href": "https://www.issuemaker.kr/news/articleView.html?idxno=35077",
             "src": "../img/article/230412이슈메이커.jpg",
             "title": "Presents 'NEW Cupggiri' <br>at Jochiwon Youth<br>Startup Hanmadang",
-            "info": "이슈메이커 23.04.12."
+            "info": "ISSUE MAKER 23.04.12."
         },
         {
             "id": 30,
