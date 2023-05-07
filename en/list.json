@@ -1,11 +1,18 @@
 {
     "articles": [
         {
+            "id": 33,
+            "href": "http://www.newsmaker.or.kr/news/articleView.html?idxno=139707",
+            "src": "../img/main_picture.png",
+            "title": "Strive to become <br>a company helps realize<br>eco-friendly ESG values",
+            "info": "News Maker 23.05.04."
+        },
+        {
             "id": 32,
             "href": "http://www.startupdaily.kr/news/articleView.html?idxno=3211",
             "src": "../img/article/230427스타트업.jpg",
             "title": "'NAWA' MOU with<br>'DAGACHI'",
-            "info": "startupdaily 23.04.27."
+            "info": "Startup Daily 23.04.27."
         },
         {
             "id": 31,
@@ -96,7 +103,7 @@
             "href": "http://www.startupdaily.kr/news/articleView.html?idxno=2681",
             "src": "../img/article/230209스타트업.jpg",
             "title": "MOU with '0SHELL",
-            "info": "startupdaily 23.02.09."
+            "info": "Startup Daily 23.02.09."
         },
         {
             "id": 19,
