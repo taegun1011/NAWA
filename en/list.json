@@ -1,17 +1,23 @@
 {
     "articles": [
         {
+            "id": 37,
+            "href": "http://www.issuemaker.kr/news/articleView.html?idxno=35230",
+            "src": "/img/article/230524이슈메이커.jpeg",
+            "title": "'NAWA' MOU with<br>'044yangjo'",
+            "info": "ISSUE MAKER 23.05.24."
+          },
+        {
             "id": 36,
             "href": "http://www.nextdaily.co.kr/news/articleView.html?idxno=218697",
             "src": "../img/main_picture.png",
-            "title": "CEO Seo Young-ho of NAWA<br>'We dream of sustainable<br>future for the envir...",
+            "title": "NAWA<br>'We dream of sustainable<br>future for the envir...",
             "info": "NextDaily 23.05.15."
         },
         {
             "id": 35,
             "href": "http://www.epeopletoday.com/news/articleView.html?idxno=15990",
             "src": "../img/article/230511피플투데이.jpg",
-            "title": "'2023 청년 ESG<br> 기업 간 대화'의 장<br>박환희 운영위원장 격려",
             "title": "Chairman Park Hwan-hee<br>encouraged '2023 Youth<br>ESG Company Conversati...",
             "info": "PeopleToday 23.05.11."
         },
