@@ -1,12 +1,19 @@
 {
   "articles": [
     {
-      "id": 37,
+      "id": 38,
       "href": "http://www.issuemaker.kr/news/articleView.html?idxno=35230",
       "src": "/img/article/230524이슈메이커.jpeg",
       "title": "스타트업 'NAWA'<br> 044양조와 MOU체결",
       "info": "이슈메이커 23.05.24."
     },
+    {
+      "id": 37,
+      "href": "http://www.epeopletoday.com/news/articleView.html?idxno=15995",
+      "src": "/img/article/230522피플투데이.jpeg",
+      "title": "해답을 제시하는<br>청년 ESG 스타트업<br>'NAWA'",
+      "info": "피플투데이 23.05.22."
+  },
     {
       "id": 36,
       "href": "http://www.nextdaily.co.kr/news/articleView.html?idxno=218697",

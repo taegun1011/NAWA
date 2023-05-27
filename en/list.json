@@ -1,12 +1,19 @@
 {
     "articles": [
         {
-            "id": 37,
+            "id": 38,
             "href": "http://www.issuemaker.kr/news/articleView.html?idxno=35230",
             "src": "/img/article/230524이슈메이커.jpeg",
             "title": "'NAWA' MOU with<br>'044yangjo'",
             "info": "ISSUE MAKER 23.05.24."
-          },
+        },
+        {
+            "id": 37,
+            "href": "http://www.epeopletoday.com/news/articleView.html?idxno=15995",
+            "src": "/img/article/230522피플투데이.jpeg",
+            "title": "ESG startup 'NAWA'<br> offers Answers",
+            "info": "PeopleToday 23.05.22."
+        },
         {
             "id": 36,
             "href": "http://www.nextdaily.co.kr/news/articleView.html?idxno=218697",
