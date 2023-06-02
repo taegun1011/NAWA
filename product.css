@@ -429,6 +429,10 @@ section {
         height: 25vw;
         font-size: 18px
     }
+
+    .situ p:last-child {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 500px) {
