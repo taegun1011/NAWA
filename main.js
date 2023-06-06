@@ -4,50 +4,19 @@ if ($(window).width() < 768) {
     $(".with_nawa p").eq(0).html("지속가능한 미래를 위해<br>상생협력을 추구하는 기업들과 함께합니다")
 }
 
-if ($(window).width() > 768) {
-    $(".color_option span").click(function (e) {
-        $(".on").removeClass("on")
-        $(this).addClass("on")
-        if (e.target.dataset.color == "pink") {
-            $(".change_img").attr("src", "img/nawa_cup1.png")
-        }
-        else if (e.target.dataset.color == "black") {
-            $(".change_img").attr("src", "img/nawa_cup1_black.png")
-        }
-        else if (e.target.dataset.color == "gray") {
-            $(".change_img").attr("src", "img/nawa_cup1_gray.png")
-        }
-    })
-} else if ($(window).width() < 767 && $(window).width() > 500) {
-    $(".color_option span").click(function (e) {
-        $(".on").removeClass("on")
-        $(this).addClass("on")
-        if (e.target.dataset.color == "pink") {
-            $(".nawa_product").css("background", "no-repeat center /contain url(img/nawa_cup1.png), #f9f9f9")
-        }
-        else if (e.target.dataset.color == "black") {
-            $(".nawa_product").css("background", "no-repeat center /contain url(img/nawa_cup1_black.png), #f9f9f9")
-        }
-        else if (e.target.dataset.color == "gray") {
-            $(".nawa_product").css("background", "no-repeat center /contain url(img/nawa_cup1_gray.png), #f9f9f9")
-        }
-    })
-}
-else {
-    $(".color_option span").click(function (e) {
-        $(".on").removeClass("on")
-        $(this).addClass("on")
-        if (e.target.dataset.color == "pink") {
-            $(".nawa_product").css("background", "no-repeat center /180% url(img/nawa_cup1.png), #f9f9f9")
-        }
-        else if (e.target.dataset.color == "black") {
-            $(".nawa_product").css("background", "no-repeat center /180% url(img/nawa_cup1_black.png), #f9f9f9")
-        }
-        else if (e.target.dataset.color == "gray") {
-            $(".nawa_product").css("background", "no-repeat center /180% url(img/nawa_cup1_gray.png), #f9f9f9")
-        }
-    })
-}
+$(".color_option span").click(function (e) {
+    $(".on").removeClass("on")
+    $(this).addClass("on")
+    if (e.target.dataset.color == "blue") {
+        $(".change_img").attr("src", "img/nawa_cup1.png")
+    }
+    else if (e.target.dataset.color == "mint") {
+        $(".change_img").attr("src", "img/nawa_cup1_mint.png")
+    }
+    else if (e.target.dataset.color == "purple") {
+        $(".change_img").attr("src", "img/nawa_cup1_purple.png")
+    }
+})
 
 var h = $(window).height() / 2
 $(window).scroll(function () {

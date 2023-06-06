@@ -144,7 +144,7 @@
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: #FBCDBD;
+    background-color: #79a6cd;
     border-radius: 1rem;
     border: none;
     transition: 0.1s ease-out;
@@ -152,11 +152,11 @@
 }
 
 .color_option span:nth-child(2) {
-    background-color: #C8C8C8;
+    background-color: #86b1a4;
 }
 
 .color_option span:nth-child(3) {
-    background-color: #545150;
+    background-color: #9f90b3;
 }
 
 .color_option span:hover {
@@ -170,9 +170,10 @@
 .nawa_product img {
     display: block;
     position: absolute;
-    top: 11%;
-    left: 8rem;
-    width: 60%;
+    left: 15rem;
+    width: 40%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nawa_product>div:last-child {
@@ -197,27 +198,6 @@
     display: block;
     font-size: 5rem;
     font-weight: 700;
-}
-
-.we_nawa {
-    padding: 10rem 0;
-}
-
-.we_nawa h2 {
-    margin-bottom: 5rem;
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: 600;
-}
-
-.video_wrap {
-    width: 60vw;
-}
-
-.video_wrap video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .nawa_partner {
@@ -253,17 +233,9 @@
     object-fit: contain;
 }
 
-@media(max-width:1280px) {
-    .nawa_product img {
-        width: 100%;
-        left: -20%;
-    }
-}
-
 @media(max-width:989px) {
     .nawa_product img {
-        width: 120%;
-        left: -30%;
+        left: 8rem;
     }
 }
 
@@ -349,25 +321,12 @@
         display: none;
     }
 
-    .video_wrap {
-        width: 100%;
-        height: auto;
-    }
-
-    .we_nawa video {
-        object-fit: contain;
-    }
-
-    .nawa_product {
-        background: no-repeat center /contain url(img/nawa_cup1.png), #f9f9f9;
-    }
-
     .color_option {
         top: 25%;
     }
 
     .nawa_product img {
-        display: none;
+        width: 45%;
     }
 
     .nawa_product>div:last-child {
@@ -402,17 +361,8 @@
         font-size: 4.5rem;
     }
 
-    .nawa_product {
-        background: no-repeat center /180% url(img/nawa_cup1.png), #f9f9f9;
-        height: 60vh;
-    }
-
     .color_option {
         top: 25%;
-    }
-
-    .nawa_product img {
-        display: none;
     }
 
     .nawa_product>div:last-child {
@@ -426,28 +376,6 @@
 
     .nawa_product strong {
         font-size: 3rem;
-    }
-
-    .we_nawa {
-        height: auto;
-        padding: 0;
-        margin-bottom: 5rem;
-        background-color: #f9f9f9;
-    }
-
-    .we_nawa h2 {
-        margin-bottom: 3rem;
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
-
-    .video_slide {
-        height: auto;
-        margin-bottom: 100px;
-    }
-
-    #vid_btn button {
-        font-size: 7rem;
     }
 
     .with_nawa {
