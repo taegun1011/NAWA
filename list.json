@@ -1,6 +1,20 @@
 {
   "articles": [
     {
+      "id": 40,
+      "href": "https://www.startupdaily.kr/news/articleView.html?idxno=3575",
+      "src": "/img/article/230703스타트업데일리.jpeg",
+      "title": "'N.A.W.A' 덴마크에서 3자 MOU 체결",
+      "info": "스타트업데일리 23.07.03."
+    },
+    {
+      "id": 39,
+      "href": "http://www.epeopletoday.com/news/articleView.html?idxno=16023",
+      "src": "/img/article/230622피플투데이.jpg",
+      "title": "제주대학교 컵끼리 시범운영 위한<br>4자 업무 협약 체결",
+      "info": "피플투데이 23.06.22."
+    },
+    {
       "id": 38,
       "href": "http://www.issuemaker.kr/news/articleView.html?idxno=35230",
       "src": "/img/article/230524이슈메이커.jpeg",
@@ -13,7 +27,7 @@
       "src": "/img/article/230522피플투데이.jpeg",
       "title": "해답을 제시하는<br>청년 ESG 스타트업<br>'NAWA'",
       "info": "피플투데이 23.05.22."
-  },
+    },
     {
       "id": 36,
       "href": "http://www.nextdaily.co.kr/news/articleView.html?idxno=218697",
